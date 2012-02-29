@@ -1,0 +1,34 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ActiveSupport	test/test_helper.rb	/^class ActiveSupport::TestCase$/;"	c
+Application	config/application.rb	/^  class Application < Rails::Application$/;"	c	class:EducationBeta
+ApplicationController	app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
+ApplicationHelper	app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+BrowsingTest	test/performance/browsing_test.rb	/^class BrowsingTest < ActionDispatch::PerformanceTest$/;"	c
+CreateUsers	db/migrate/20120229074622_create_users.rb	/^class CreateUsers < ActiveRecord::Migration$/;"	c
+EducationBeta	config/application.rb	/^module EducationBeta$/;"	m
+SessionsController	app/controllers/sessions_controller.rb	/^class SessionsController < ApplicationController$/;"	c
+SessionsControllerTest	test/functional/sessions_controller_test.rb	/^class SessionsControllerTest < ActionController::TestCase$/;"	c
+SessionsHelper	app/helpers/sessions_helper.rb	/^module SessionsHelper$/;"	m
+SessionsHelperTest	test/unit/helpers/sessions_helper_test.rb	/^class SessionsHelperTest < ActionView::TestCase$/;"	c
+User	app/models/user.rb	/^class User < ActiveRecord::Base$/;"	c
+UserTest	test/unit/user_test.rb	/^class UserTest < ActiveSupport::TestCase$/;"	c
+UsersController	app/controllers/users_controller.rb	/^class UsersController < ApplicationController$/;"	c
+UsersControllerTest	test/functional/users_controller_test.rb	/^class UsersControllerTest < ActionController::TestCase$/;"	c
+UsersHelper	app/helpers/users_helper.rb	/^module UsersHelper$/;"	m
+UsersHelperTest	test/unit/helpers/users_helper_test.rb	/^class UsersHelperTest < ActionView::TestCase$/;"	c
+about	public/index.html	/^      function about() {$/;"	f
+authenticate	app/models/user.rb	/^   def self.authenticate(email, password)$/;"	F	class:User
+change	db/migrate/20120229074622_create_users.rb	/^  def change$/;"	f	class:CreateUsers
+create	app/controllers/sessions_controller.rb	/^  def create$/;"	f	class:SessionsController
+create	app/controllers/users_controller.rb	/^  def create$/;"	f	class:UsersController
+current_user	app/controllers/application_controller.rb	/^  def current_user$/;"	f	class:ApplicationController
+destroy	app/controllers/sessions_controller.rb	/^  def destroy$/;"	f	class:SessionsController
+encrypt_password	app/models/user.rb	/^   def encrypt_password$/;"	f	class:User
+new	app/controllers/sessions_controller.rb	/^  def new$/;"	f	class:SessionsController
+new	app/controllers/users_controller.rb	/^  def new$/;"	f	class:UsersController
+test_homepage	test/performance/browsing_test.rb	/^  def test_homepage$/;"	f	class:BrowsingTest
