@@ -1,0 +1,25 @@
+@charset "utf-8";
+body {
+	margin-left: 0px;
+	margin-right: 0px;
+	background-image:url(background.jpg);
+	background-repeat:no-repeat;
+	background-size: 100% 710px;
+}
+
+#login-box {
+    margin-left: 410px;
+	margin-right: 400px;
+	margin-top: 100px;
+	width:333px;
+	height: 352px;
+	padding: 58px 76px 0 76px;
+	color: #ebebeb;
+	font: 12px Arial, Helvetica, sans-serif;
+	background: url(images/login-box-backg.png) no-repeat left top;
+	background-size: 100% 300px;
+}
+
+#login-box td {
+    padding: 20px 0 0 10px;
+}
