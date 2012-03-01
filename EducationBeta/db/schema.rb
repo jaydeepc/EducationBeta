@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120229074622) do
+ActiveRecord::Schema.define(:version => 20120301070306) do
 
   create_table "users", :force => true do |t|
     t.string   "email"
@@ -18,8 +18,9 @@ ActiveRecord::Schema.define(:version => 20120229074622) do
     t.string   "password_salt"
     t.string   "first_name"
     t.string   "last_name"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
+    t.datetime "created_at",                       :null => false
+    t.datetime "updated_at",                       :null => false
+    t.boolean  "is_tutor",      :default => false
   end
 
 end

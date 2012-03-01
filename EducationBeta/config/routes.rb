@@ -1,4 +1,8 @@
 EducationBeta::Application.routes.draw do
+  get "tutor/new"
+
+  get "student/new"
+
   get "welcome/show"
 
   get "sessions/new"
@@ -9,6 +13,8 @@ EducationBeta::Application.routes.draw do
   get "log_in" => "sessions#new", :as => "log_in"
   get "sign_up" => "users#new", :as => "sign_up"
   root :to => "welcome#show"
+  match "student/:id" => "student#show"
+  match "tutor/:id" => "tutor#show"
   resources :users
   resources :sessions
 
