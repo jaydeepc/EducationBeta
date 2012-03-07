@@ -1,54 +1,33 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Login</title>
+<title>EducationBeta</title>
+<%= javascript_include_tag "jquery-1.7.1.min" %>
+<%= javascript_include_tag "jquery.corner" %>
+<%= javascript_include_tag "jquery.validate" %>
+<%= javascript_include_tag "js" %>
+<%= javascript_include_tag "css_browser_selector" %>
+
+<%= stylesheet_link_tag "sessions" %>
+<%= stylesheet_link_tag "grid" %>
+<%= stylesheet_link_tag "reset" %>
 </head>
-<body id="login-bg"> 
- <%= form_tag sessions_path do %> 
-<!-- Start: login-holder -->
-<div id="login-holder">
-
-	<!-- start logo -->
-	<div id="logo-login">
-		<!-- <a href="index.html"><img src="images/shared/logo.png" width="156" height="40" alt="" /></a> -->
-	</div>
-	<!-- end logo -->
-	
-	<div class="clear"></div>
-	
-	<!--  start loginbox ................................................................................. -->
+<body>
+	<%= form_tag sessions_path do %> 
 	<div id="loginbox">
-	
-	<!--  start login-inner -->
-	<div id="login-inner">
-		<table border="0" cellpadding="0" cellspacing="0">
-		<tr>
-			<th>Username</th>
-			<td><%= text_field_tag :email, params[:email], :class => 'login-inp' %></td>
-		</tr>
-		<tr>
-			<th>Password</th>
-			<td><%= password_field_tag :password, nil, :class => 'login-inp' %></td>
-		</tr>
-		<tr>
-			<th></th>
-			<td valign="top"><input type="checkbox" class="checkbox-size" id="login-check" /><label for="login-check">Remember me</label></td>
-		</tr>
-		<tr>
-			<th></th>
-			<td><%= submit_tag "Log in", :class => 'submit-login' %></td>
-		</tr>
-		</table>
+		<a href="#" id="logo">EducationBeta</a>
+		<div id="loginform">
+			<form name="login" action="cp_main.html" method="get">
+				<div id="username_field"><%= text_field_tag :email, params[:email], :class => 'required' %></div>
+				<div id="password_field"><%= password_field_tag :password, nil, :class => 'required' %></div>
+				<div id="buttonline">
+					<%= submit_tag "Log in", :class => 'float_left width_4', :id => 'loginbutton' %>
+					<a href="#" class="passforgot float_right">Forgot your password?</a>
+				</div>
+			</form>	
+		</div>
 	</div>
- 	<!--  end login-inner -->
-	<div class="clear"></div>
-	<a href="" class="forgot-pwd">Forgot Password?</a>
- </div>
- <!--  end loginbox -->
-
-</div>
-<!-- End: login-holder -->
-<% end %>
+	<% end %>
 </body>
 </html>
+
