@@ -984,6 +984,7 @@ div.information .hide_btn:hover {
 	text-decoration: none;
 	line-height: 30px;
 	padding: 0 10px 0 0;
+	font-size: 10px;
 }
 
 #loginbox .passforgot:hover {

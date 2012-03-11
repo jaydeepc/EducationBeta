@@ -1,11 +1,15 @@
 body {
 	background: #363d47 url('images/background.jpg') top center no-repeat fixed;
 	font-family: Tahoma, Verdana, Arial, sans-serif;
-	font-size: 16px;
+	font-size: 12px;
 	color: #ffffff;
 }
-
-h2 {
- font-size: 25px;
- color: #FFFFFF;
- }
+ 
+#title_text {
+	width: 380px;
+	height: 100px;
+    display: block;
+    margin: 0 auto;
+	background: url('images/title_txt.png') 0 0 no-repeat;
+	text-indent: -9999px;
+} 
