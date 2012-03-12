@@ -1,4 +1,8 @@
 EducationBeta::Application.routes.draw do
+  get "question/new"
+
+  get "question/show"
+
   get "tutor/new"
 
   get "student/new"
