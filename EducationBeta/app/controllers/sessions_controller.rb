@@ -1,4 +1,8 @@
 class SessionsController < ApplicationController
+
+  before_filter :require_user, :only => :destroy
+  before_filter :require_no_user, :only => [:new, :create]
+
   def new
   end
 
