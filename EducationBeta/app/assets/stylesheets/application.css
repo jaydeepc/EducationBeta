@@ -13,3 +13,12 @@ body {
 	background: url('images/title_txt.png') 0 0 no-repeat;
 	text-indent: -9999px;
 } 
+
+#user_nav {
+    color: #ffffff;
+	font-family: Tahoma;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 12px;
+	width: 380px;
+}
