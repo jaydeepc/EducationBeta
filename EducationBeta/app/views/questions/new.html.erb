@@ -1,0 +1,24 @@
+<h1>Question#new</h1>
+
+<%= form_for([@question,@user]) do |f| %>
+  <% if @question.errors.any? %>
+    <div class="error_messages">
+      <h2>Form is invalid</h2>
+      <ul>
+        <% for message in @question.errors.full_messages %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <p>
+  <%= f.label :question %><br />
+  <%= f.text_field :description %>
+  </p>
+  <p>
+  <%= f.label :tutor %><br />
+  <%= select_tag :tutor, options_for_select(["Student","Tutor"], "Student") %><br />
+  </p>
+  <p class="button"><%= f.submit %></p>
+<% end %>
+

@@ -1,4 +1,4 @@
-class TutorController < ApplicationController
+class StudentsController < ApplicationController
   
   before_filter :require_user
 

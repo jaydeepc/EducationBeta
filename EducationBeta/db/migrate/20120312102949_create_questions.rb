@@ -1,4 +1,4 @@
-class Question < ActiveRecord::Migration
+class CreateQuestions < ActiveRecord::Migration
   def up
     create_table :questions do |t|
       t.integer :student_id

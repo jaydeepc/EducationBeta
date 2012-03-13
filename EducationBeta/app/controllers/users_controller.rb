@@ -7,9 +7,6 @@ class UsersController < ApplicationController
   end
 
   def create
-    p "!!!!!!!!!!!!!!!!!!!"
-    p params[:type].inspect
-    p "!!!!!!!!!!!!!!!!!!!"
     params[:user][:is_tutor] = true ? (params[:type] == "Tutor") : false
     @user = User.new(params[:user])
     p params[:user].inspect
