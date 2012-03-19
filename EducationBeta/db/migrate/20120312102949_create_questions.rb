@@ -1,5 +1,5 @@
 class CreateQuestions < ActiveRecord::Migration
-  def up
+  def self.up
     create_table :questions do |t|
       t.integer :student_id
       t.integer :tutor_id
@@ -10,7 +10,7 @@ class CreateQuestions < ActiveRecord::Migration
     end
   end
 
-  def down
+  def self.down
     drop_table :questions
   end
 end

@@ -11,9 +11,9 @@ class SessionsController < ApplicationController
     if user
       session[:user_id] = user.id
       if User.is_tutor?(params[:email])
-        redirect_to "/tutor/#{user.id}", :notice => "Logged in!"
+        redirect_to "/tutors/#{user.id}", :notice => "Logged in!"
       else
-        redirect_to "/student/#{user.id}", :notice => "Logged in!"
+        redirect_to "/students/#{user.id}", :notice => "Logged in!"
       end
     else
       flash.now.alert = "Invalid email or password"

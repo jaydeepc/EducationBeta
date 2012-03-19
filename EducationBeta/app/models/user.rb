@@ -1,12 +1,14 @@
 class User < ActiveRecord::Base
-  attr_accessible :email, :password, :password_confirmation, :is_tutor
+  attr_accessible :name, :email, :password, :password_confirmation, :is_tutor
     
+   has_many :question
    attr_accessor :password
    before_save :encrypt_password
         
    validates_confirmation_of :password
    validates_presence_of :password, :on => :create
    validates_presence_of :email
+   validates_presence_of :name
    validates_uniqueness_of :email
    validates :is_tutor, :inclusion => {:in => [true, false]}
 
