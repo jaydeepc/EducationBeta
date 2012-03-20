@@ -16,4 +16,13 @@ class UsersController < ApplicationController
       render "new"
     end
   end
+
+  def show
+    @user = User.find params[:id]
+    if @user.is_tutor == true
+      render "tutors#show" 
+    else
+      render "students#show"
+    end
+  end
 end

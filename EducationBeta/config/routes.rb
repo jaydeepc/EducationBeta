@@ -1,28 +1,16 @@
 EducationBeta::Application.routes.draw do
-  get "questions/new"
-
-  get "questions/show"
-
-  get "tutors/new"
-
-  get "students/new"
-
-  get "welcome/show"
-
-  get "sessions/new"
-
-  get "users/new"
 
   get "log_out" => "sessions#destroy", :as => "log_out"
   get "log_in" => "sessions#new", :as => "log_in"
   get "sign_up" => "users#new", :as => "sign_up"
   root :to => "welcome#show"
-  match "students/:id" => "students#show"
-  match "students/:id/questions/new" => "questions#new"
-  match "tutors/:id" => "tutors#show"
-  resources :users 
+  
+  resources :students, :tutors do
+    member do
+      resources :questions
+    end
+  end 
   resources :sessions
-  resources :questions
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
