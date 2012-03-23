@@ -12,6 +12,8 @@ body {
     margin: 0 auto;
 	background: url('images/title_txt.png') 0 0 no-repeat;
 	text-indent: -9999px;
+	margin-left: 190px;
+	margin-bottom: -60px;
 } 
 
 #user_nav {

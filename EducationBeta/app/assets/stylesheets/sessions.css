@@ -305,9 +305,11 @@ div.information .hide_btn:hover {
 }
 
 #profile #avatar img {
+    background: url('profile_pic/test_avatar.png') no-repeat;
 	position: absolute;
 	top: 3px;
 	left: 3px;
+/*  width: 52px;*/
 }
 
 #profile #avatar #unreadcount {
