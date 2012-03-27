@@ -1,2 +1,14 @@
-<h1>Question#show</h1>
-<p>Find me in app/views/question/show.html.erb</p>
+<div>
+  <p>
+  <tr>Description</br>
+    <td><%= @question.description  %></td></tr>
+  </p> 
+  <p>
+  <tr>Tutor</br>
+    <td><%= @question.tutor.email %></td></tr>
+  </p>
+  <p>
+  <tr>Status</br>
+    <td><%= @question.status %></td></tr>
+  </p>
+</div>
