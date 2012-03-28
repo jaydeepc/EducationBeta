@@ -1,14 +1,14 @@
 <div>
-  <p>
-  <tr>Description</br>
-    <td><%= @question.description  %></td></tr>
-  </p> 
-  <p>
-  <tr>Tutor</br>
-    <td><%= @question.tutor.email %></td></tr>
-  </p>
-  <p>
-  <tr>Status</br>
-    <td><%= @question.status %></td></tr>
-  </p>
+  <table border="1">
+    <tr>
+      <th>Question</th>
+      <th>Tutor</th>
+      <th>Status</th>
+    </tr>
+    <tr>
+      <td><%= @question.description  %></td>
+      <td><%= @question.tutor.email %></td>
+      <td><%= @question.status %></td>
+    </tr>
+  </table>
 </div>
