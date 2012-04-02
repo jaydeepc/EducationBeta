@@ -1,0 +1,16 @@
+<div>
+  <table border="1">
+    <tr>
+      <th>Question</th>
+      <th>Tutor</th>
+      <th>Status</th>
+    </tr>
+    <%for question in @questions%>
+    <tr>
+      <td><%= question.description  %></td>
+      <td><%= question.tutor.email %></td>
+      <td><%= question.status %></td>
+    </tr>
+    <%end%>
+  </table>
+</div>
