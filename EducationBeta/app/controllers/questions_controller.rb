@@ -15,7 +15,7 @@ class QuestionsController < ApplicationController
     question_params[:description] = params[:question][:description]
     @question = Question.new question_params
     if @question.save
-      redirect_to "/students/#{params[:id]}/questions/#{@question.id}"
+      redirect_to questions_path
     else
       render "new"
     end  
@@ -23,5 +23,9 @@ class QuestionsController < ApplicationController
 
   def show
     @question = Question.find(params[:id])
+  end
+
+  def index
+    @questions = Question.find_all_by_student_id(params[:id])
   end
 end
