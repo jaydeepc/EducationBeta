@@ -9,12 +9,10 @@ class SessionsController < ApplicationController
   def create
     user = User.authenticate(params[:email], params[:password])
     if user
+      @user = user
       session[:user_id] = user.id
-      if User.is_tutor?(params[:email])
-        redirect_to "/tutors/#{user.id}", :notice => "Logged in!"
-      else
-        redirect_to "/students/#{user.id}"
-      end
+      redirect_to "/tutors/#{user.id}" if @user.is_tutor?
+      redirect_to "/students/#{user.id}" unless @user.is_tutor?
     else
       flash.now.alert = "Invalid email or password"
       render "new"

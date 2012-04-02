@@ -25,4 +25,7 @@ class StudentsController < ApplicationController
       redirect_to root_url
     end
   end
+
+  def show
+  end
 end

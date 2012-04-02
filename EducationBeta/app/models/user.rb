@@ -20,8 +20,7 @@ class User < ActiveRecord::Base
        end
    end
   
-   def self.is_tutor?(email)
-     user = find_by_email(email)
+   def self.is_tutor?
      true ? user.is_tutor == true : false
    end
                   
