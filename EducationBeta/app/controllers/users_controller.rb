@@ -19,7 +19,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find params[:id]
-    if @user.is_tutor == true
+    if @user.is_tutor?
       render "tutors#show" 
     else
       render "students#show"

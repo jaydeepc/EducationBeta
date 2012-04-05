@@ -1,3 +1,3 @@
 class Tutor < User
-has_many :question
+  has_many :questions
 end
