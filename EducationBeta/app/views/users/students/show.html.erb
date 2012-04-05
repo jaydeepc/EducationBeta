@@ -22,15 +22,15 @@
       </div><!-- Header End -->
       <div class="clear"></div>
       <div id="userbar"><!-- Userbar Begin -->
-        <%= render "students/userbar/profile"%>
-        <%= render "students/userbar/navigation"%>
+        <%= render "users/students/userbar/profile"%>
+        <%= render "users/students/userbar/navigation"%>
       </div><!-- Userbar End -->
       <div class="clear"></div>
       <div id="body">
-        <%= render :partial => "students/body/big_block", :locals => {:header => "Course Completion Status", :text => "Graph will come here"}%>
-        <%= render :partial => "students/body/small_block", :locals => {:header => "My Notification", :text => "Notifications will come here"}%>
-        <%= render :partial => "students/body/small_block", :locals => {:header => "Test Results", :text => "Test Results will come here"}%>
-        <%= render :partial => "students/body/small_block", :locals => {:header => "My Ranking report", :text => "Report will come here"}%>
+        <%= render :partial => "users/students/body/big_block", :locals => {:header => "Course Completion Status", :text => "Graph will come here"}%>
+        <%= render :partial => "users/students/body/small_block", :locals => {:header => "My Notification", :text => "Notifications will come here"}%>
+        <%= render :partial => "users/students/body/small_block", :locals => {:header => "Test Results", :text => "Test Results will come here"}%>
+        <%= render :partial => "users/students/body/small_block", :locals => {:header => "My Ranking report", :text => "Report will come here"}%>
       </div><!-- Body Wrapper End -->
   </body>
 </html>

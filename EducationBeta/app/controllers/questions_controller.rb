@@ -26,11 +26,7 @@ class QuestionsController < ApplicationController
   end
 
   def index
-    @user = User.find params[:id]
-    if @user.is_tutor?
-    @questions = Question.find_all_by_tutor_id(params[:id])
-    else
-    @questions = Question.find_all_by_student_id(params[:id])
-    end 
+    @questions = Question.find_all_by_tutor_id(params[:user_id]) if current_user.is_tutor?
+    @questions = Question.find_all_by_student_id(params[:user_id]) unless current_user.is_tutor?
   end
 end

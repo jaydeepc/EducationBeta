@@ -7,7 +7,7 @@
     </tr>
     <%for question in @questions%>
     <tr>
-      <td><%= question.description  %></td>
+      <td><%= link_to question.description, user_question_path({:user_id => current_user.id, :id => question.id})  %></td>
       <td><%= question.tutor.email %></td>
       <td><%= question.status %></td>
     </tr>

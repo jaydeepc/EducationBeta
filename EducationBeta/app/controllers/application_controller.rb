@@ -14,6 +14,20 @@ class ApplicationController < ActionController::Base
       redirect_to log_in_url
       return false
     end
+    unless params[:user_id].nil?
+      unless current_user == User.find(params[:user_id])
+        flash[:notice] = 'You cannot view another acount'
+        redirect_to root_url
+        return false
+      end
+    end
+    if params[:user_id].nil? && !params[:id].nil?
+      unless current_user == User.find(params[:id])
+        flash[:notice] = 'You cannot view another acount'
+        redirect_to root_url
+        return false
+      end
+    end
   end
 
   def require_no_user

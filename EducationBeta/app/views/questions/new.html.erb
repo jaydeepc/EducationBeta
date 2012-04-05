@@ -16,7 +16,7 @@
   </p>
   <p>
   <%= f.label :tutor %><br />
-  <%= select_tag :tutor, options_for_select(User.find(:all).select{|u| u.is_tutor == true}.collect(&:email)) %><br />
+  <%= select_tag :tutor, options_for_select(User.find(:all).select{|u| u.is_tutor?}.collect(&:email)) %><br />
   </p>
   <p>
   <%= f.label :subject %><br />

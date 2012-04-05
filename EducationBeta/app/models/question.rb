@@ -1,8 +1,8 @@
 class Question < ActiveRecord::Base
   attr_accessible :student_id, :tutor_id, :subject_id, :description, :status
 
-  belongs_to :student
   belongs_to :tutor
+  belongs_to :student
   belongs_to :subject
 
   validates_presence_of :status

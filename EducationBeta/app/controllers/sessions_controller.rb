@@ -11,8 +11,7 @@ class SessionsController < ApplicationController
     if user
       @user = user
       session[:user_id] = user.id
-      redirect_to "/tutors/#{user.id}" if @user.is_tutor?
-      redirect_to "/students/#{user.id}" unless @user.is_tutor?
+      redirect_to user_path({:id => user.id})
     else
       flash.now.alert = "Invalid email or password"
       render "new"

@@ -5,10 +5,8 @@ EducationBeta::Application.routes.draw do
   get "sign_up" => "users#new", :as => "sign_up"
   root :to => "welcome#show"
   
-  resources :students, :tutors do
-    member do
-      resources :questions
-    end
+  resources :users do 
+    resources :questions
   end 
   resources :sessions
 
