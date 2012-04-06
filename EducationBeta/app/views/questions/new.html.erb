@@ -1,5 +1,5 @@
 <h1>Questions#new</h1>
-<%= form_for(@question) do |f| %>
+<%= form_for([@user,@question]) do |f| %>
   <% if @question.errors.any? %>
     <div class="error_messages">
       <h2>Form is invalid</h2>
@@ -16,7 +16,7 @@
   </p>
   <p>
   <%= f.label :tutor %><br />
-  <%= select_tag :tutor, options_for_select(User.find(:all).select{|u| u.is_tutor?}.collect(&:email)) %><br />
+  <%= select_tag :tutor, options_for_select(Tutor.find(:all).collect(&:email)) %><br />
   </p>
   <p>
   <%= f.label :subject %><br />

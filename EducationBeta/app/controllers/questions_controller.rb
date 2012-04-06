@@ -4,6 +4,7 @@ class QuestionsController < ApplicationController
 
   def new
     @question = Question.new
+    @user = current_user
   end
 
   def create
@@ -15,7 +16,7 @@ class QuestionsController < ApplicationController
     question_params[:description] = params[:question][:description]
     @question = Question.new question_params
     if @question.save
-      redirect_to questions_path
+      redirect_to user_questions_path
     else
       render "new"
     end  
@@ -26,7 +27,7 @@ class QuestionsController < ApplicationController
   end
 
   def index
-    @questions = Question.find_all_by_tutor_id(params[:user_id]) if current_user.is_tutor?
-    @questions = Question.find_all_by_student_id(params[:user_id]) unless current_user.is_tutor?
+    @questions = Tutor.find(current_user.id).questions if current_user.is_tutor?
+    @questions = Student.find(current_user.id).questions unless current_user.is_tutor?
   end
 end
