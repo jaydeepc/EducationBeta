@@ -1,15 +1,93 @@
-<h1>Questions#new</h1>
-<%= form_for([@user,@question]) do |f| %>
-  <% if @question.errors.any? %>
-    <div class="error_messages">
-      <h2>Form is invalid</h2>
-      <ul>
-        <% for message in @question.errors.full_messages %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
+<%= stylesheet_link_tag "grid" %>
+<%= stylesheet_link_tag "reset" %>
+<%= stylesheet_link_tag "sessions" %>
+<%= stylesheet_link_tag "style" %>
+<%= stylesheet_link_tag "plugins" %>
+
+
+<%= javascript_include_tag "jquery-1.7.1.min.js" %>
+<%= javascript_include_tag "ui/jquery-ui-1.8.17.custom.min.js" %>
+<%= javascript_include_tag "jquery.corner.js" %>
+<%= javascript_include_tag "jquery.validate.js" %>
+<%= javascript_include_tag "css_browser_selector.js" %>
+<%= javascript_include_tag "jquery.jqplot.min.js" %>
+<%= javascript_include_tag "plugins/jqplot.highlighter.min.js" %>
+<%= javascript_include_tag "plugins/jqplot.cursor.min.js" %>
+<%= javascript_include_tag "plugins/jqplot.dateAxisRenderer.min.js" %>
+<%= javascript_include_tag "editor/jquery.cleditor.min.js" %>
+<%= javascript_include_tag "calendar/fullcalendar.min.js" %>
+<%= javascript_include_tag "jquery.multiselect.min.js" %>
+<%= javascript_include_tag "tooltip/jquery.tipsy.js" %>
+<%= javascript_include_tag "validation/jquery.validationEngine.js" %>
+<%= javascript_include_tag "validation/languages/jquery.validationEngine-en.js" %>
+<%= javascript_include_tag "jquery.dataTables.min.js" %>
+<%= javascript_include_tag "fancybox/jquery.fancybox-1.3.4.pack.js" %>
+<%= javascript_include_tag "fancybox/jquery.easing-1.4.pack.js" %>
+<%= javascript_include_tag "js.js" %>
+
+
+<div id="main" class="container_12"><!-- Body Wrapper Begin -->
+  <div id="header"><!-- Header Begin -->
+    <div class="grid_3"><a href="#" id="logo" class="float_left">EducationBeta</a></div>
+    <div class="grid_4 push_5">
+      <%= render "shared/header_search"%>
     </div>
-  <% end %>
+  </div><!-- Header End -->
+  <div class="clear"></div>
+<div id="userbar"><!-- Userbar Begin -->
+<%= render "students/userbar/profile"%>
+<%= render "students/userbar/navigation"%>
+</div>
+
+<div id="body">
+	<div class="block big"><!-- Block Begin -->
+		<div class="titlebar">
+			<h3>Ask a Question</h3>
+			<a href="#" class="toggle">&nbsp;</a>
+		</div>
+		<div class="block_cont">
+			<form class="form" action="" method="POST">
+				<div class="form_row">
+					<label>Summary:</label>
+						<input class="input validate[required] tipRight" type="text" style="width: 290px;" name="req" id="req" placeholder="Enter title" original-title=".tipRight - right tooltip by tipsy" />
+						</div>
+				<div class="form_row">
+					<label>Tutor:</label>
+					<select name="select" class="select" style="width: 300px;">
+						<option value="opt1">Category name</option>
+						<option value="opt2">Option 2</option>
+						<option value="opt3">Option 3</option>
+						<option value="opt4">Option 4</option>
+						<option value="opt5">Option 5</option>
+						<option value="opt6">Option 6</option>
+						<option value="opt7">Option 7</option>
+						<option value="opt8">Option 8</option>
+					</select>
+				</div>
+				<div class="form_row">
+					<label>Subject:</label>
+					<select name="select" class="select" style="width: 300px;">
+						<option value="opt11">Tag1</option>
+						<option value="opt21">Tag2</option>
+						<option value="opt31">Tag3</option>
+						<option value="opt41">Tag4</option>
+						<option value="opt41">Tag5</option>
+						<option value="opt41">Tag6</option>
+						<option value="opt41">Tag7</option>
+						<option value="opt41">Tag8</option>
+						<option value="opt41">Tag9</option>
+						<option value="opt41">Tag10</option>
+					</select>
+				</div>
+				<div class="form_row"><label>Question:</label><textarea id="htmleditor"></textarea></div>
+				<div class="clear"></div><br />
+				<div class="form_row"><input type="submit" class="submit" value="Submit" /></div>
+			</form>
+		</div>
+	</div><!-- Block End -->
+</div>
+
+<%= form_for(@question) do |f| %>
   <p>
   <%= f.label :description %><br />
   <%= f.text_field :description %>
