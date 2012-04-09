@@ -35,8 +35,8 @@
   </div><!-- Header End -->
   <div class="clear"></div>
 <div id="userbar"><!-- Userbar Begin -->
-<%= render "students/userbar/profile"%>
-<%= render "students/userbar/navigation"%>
+<%= render "users/students/userbar/profile"%>
+<%= render "users/students/userbar/navigation"%>
 </div>
 
 <div id="body">
@@ -46,59 +46,25 @@
 			<a href="#" class="toggle">&nbsp;</a>
 		</div>
 		<div class="block_cont">
-			<form class="form" action="" method="POST">
+			<%= form_for([@user,@question], :method => "POST", :html => {:class => "form"}) do |f| %>
 				<div class="form_row">
 					<label>Summary:</label>
 						<input class="input validate[required] tipRight" type="text" style="width: 290px;" name="req" id="req" placeholder="Enter title" original-title=".tipRight - right tooltip by tipsy" />
 						</div>
 				<div class="form_row">
-					<label>Tutor:</label>
-					<select name="select" class="select" style="width: 300px;">
-						<option value="opt1">Category name</option>
-						<option value="opt2">Option 2</option>
-						<option value="opt3">Option 3</option>
-						<option value="opt4">Option 4</option>
-						<option value="opt5">Option 5</option>
-						<option value="opt6">Option 6</option>
-						<option value="opt7">Option 7</option>
-						<option value="opt8">Option 8</option>
-					</select>
+					<%= f.label :tutor %>
+					<%= select_tag :tutor, options_for_select(Tutor.find(:all).collect(&:email)), :class => "select" %><br />
 				</div>
 				<div class="form_row">
-					<label>Subject:</label>
-					<select name="select" class="select" style="width: 300px;">
-						<option value="opt11">Tag1</option>
-						<option value="opt21">Tag2</option>
-						<option value="opt31">Tag3</option>
-						<option value="opt41">Tag4</option>
-						<option value="opt41">Tag5</option>
-						<option value="opt41">Tag6</option>
-						<option value="opt41">Tag7</option>
-						<option value="opt41">Tag8</option>
-						<option value="opt41">Tag9</option>
-						<option value="opt41">Tag10</option>
-					</select>
+					<%= f.label :subject %>
+					<%= select_tag :subject, options_for_select(Subject.find(:all).collect(&:subject)), :class => "select" %><br />
 				</div>
-				<div class="form_row"><label>Question:</label><textarea id="htmleditor"></textarea></div>
+				<div class="form_row"><%= f.label :description %><br /><%= f.text_area :description, :id => "htmleditor" %></div>
 				<div class="clear"></div><br />
-				<div class="form_row"><input type="submit" class="submit" value="Submit" /></div>
-			</form>
+				<div class="form_row"><%= f.submit :class => "submit" %></div>
+			<% end %>
 		</div>
 	</div><!-- Block End -->
 </div>
 
-<%= form_for(@question) do |f| %>
-  <p>
-  <%= f.label :description %><br />
-  <%= f.text_field :description %>
-  </p>
-  <p>
-  <%= f.label :tutor %><br />
-  <%= select_tag :tutor, options_for_select(Tutor.find(:all).collect(&:email)) %><br />
-  </p>
-  <p>
-  <%= f.label :subject %><br />
-  <%= select_tag :subject, options_for_select(Subject.find(:all).collect(&:subject)) %><br />
-  </p>
-  <p class="button"><%= f.submit %></p>
-<% end %>
+
