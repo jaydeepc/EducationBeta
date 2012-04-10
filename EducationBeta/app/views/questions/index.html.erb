@@ -1,16 +1,73 @@
-<div>
-  <table border="1">
-    <tr>
-      <th>Question</th>
-      <th>Tutor</th>
-      <th>Status</th>
-    </tr>
-    <%for question in @questions%>
-    <tr>
-      <td><%= link_to question.description, user_question_path({:user_id => current_user.id, :id => question.id})  %></td>
-      <td><%= question.tutor.email %></td>
-      <td><%= question.status %></td>
-    </tr>
-    <%end%>
-  </table>
+<%= stylesheet_link_tag "grid" %>
+<%= stylesheet_link_tag "reset" %>
+<%= stylesheet_link_tag "sessions" %>
+<%= stylesheet_link_tag "style" %>
+<%= stylesheet_link_tag "plugins" %>
+
+
+<%= javascript_include_tag "jquery-1.7.1.min.js" %>
+<%= javascript_include_tag "ui/jquery-ui-1.8.17.custom.min.js" %>
+<%= javascript_include_tag "jquery.corner.js" %>
+<%= javascript_include_tag "jquery.validate.js" %>
+<%= javascript_include_tag "css_browser_selector.js" %>
+<%= javascript_include_tag "jquery.jqplot.min.js" %>
+<%= javascript_include_tag "plugins/jqplot.highlighter.min.js" %>
+<%= javascript_include_tag "plugins/jqplot.cursor.min.js" %>
+<%= javascript_include_tag "plugins/jqplot.dateAxisRenderer.min.js" %>
+<%= javascript_include_tag "editor/jquery.cleditor.min.js" %>
+<%= javascript_include_tag "calendar/fullcalendar.min.js" %>
+<%= javascript_include_tag "jquery.multiselect.min.js" %>
+<%= javascript_include_tag "tooltip/jquery.tipsy.js" %>
+<%= javascript_include_tag "validation/jquery.validationEngine.js" %>
+<%= javascript_include_tag "validation/languages/jquery.validationEngine-en.js" %>
+<%= javascript_include_tag "jquery.dataTables.min.js" %>
+<%= javascript_include_tag "fancybox/jquery.fancybox-1.3.4.pack.js" %>
+<%= javascript_include_tag "fancybox/jquery.easing-1.4.pack.js" %>
+<%= javascript_include_tag "js.js" %>
+
+
+<div id="main" class="container_12"><!-- Body Wrapper Begin -->
+  <div id="header"><!-- Header Begin -->
+    <div class="grid_3"><a href="#" id="logo" class="float_left">EducationBeta</a></div>
+    <div class="grid_4 push_5">
+      <%= render "shared/header_search"%>
+    </div>
+  </div><!-- Header End -->
+  <div class="clear"></div>
+<div id="userbar"><!-- Userbar Begin -->
+<%= render "users/students/userbar/profile"%>
+<%= render "users/students/userbar/navigation"%>
 </div>
+
+
+<div id="body">
+	<div class="block big"><!-- Block Begin -->
+		<div class="titlebar">
+			<h3>My Questions</h3>
+			<a href="#" class="toggle">&nbsp;</a>
+		</div>
+		<div class="block_cont">
+			<table class="data-table"><!-- Table Wrapper Begin -->
+				<thead>
+					<tr>
+					<th width="40"><input type="checkbox" name="check" value="-"></th>
+					<th>Question</th>
+					<th>Tutor</th>
+					<th>User role</th>
+					<th width="80" class="sorting_disabled">Action</th>
+					</tr>
+				</thead>
+				<%for question in @questions%>
+				<tr>
+				  <td><input type="checkbox" name="check" value="-"></td>	
+			      <td><%= link_to question.description, user_question_path({:user_id => current_user.id, :id => question.id})  %></td>
+			      <td><%= question.tutor.email %></td>
+			      <td><%= question.status %></td>
+				  <td><div style="height: 3px;">&nbsp;</div><div class="actionbar"><a href="" class="action view"><span>View</span></a><a href="" class="action edit"><span>Edit</span></a><a href="" class="action delete"><span>Delete</span></a></div></td>	
+			    </tr>
+			    <%end%>
+			</table><!-- Table Wrapper End -->
+		</div>
+	</div><!-- Block End -->
+</div>
+</div><!-- Body Wrapper End -->
