@@ -29,9 +29,7 @@
   </p>
   <p>
   <%= f.label :user_type %><br />
-  <%= select_tag :type, options_for_select(["Student","Tutor"], "Student") %><br />
+  <%= f.select :user_type, options_for_select(["Student","Tutor"], "Student") %><br />
   </p>
   <p class="button"><%= f.submit %></p>
 <% end %>
-
-

@@ -46,10 +46,10 @@
 			<a href="#" class="toggle">&nbsp;</a>
 		</div>
 		<div class="block_cont">
-			<%= form_for([@user,@question], :method => "POST", :html => {:class => "form"}) do |f| %>
+			<%= form_for([current_user,@question], :method => "POST", :html => {:class => "form"}) do |f| %>
 				<div class="form_row">
 					<label>Summary:</label>
-						<input class="input validate[required] tipRight" type="text" style="width: 290px;" name="req" id="req" placeholder="Enter title" original-title=".tipRight - right tooltip by tipsy" />
+						<input class="input validate[required] tipRight" type="text" style="width: 290px;" name="req" id="req" placeholder="Enter title"/>
 						</div>
 				<div class="form_row">
 					<%= f.label :tutor %>

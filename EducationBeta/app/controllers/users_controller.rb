@@ -8,9 +8,7 @@ class UsersController < ApplicationController
   end
 
   def create
-    params[:user][:is_tutor] = true ? (params[:type] == "Tutor") : false
     @user = User.new(params[:user])
-    p params[:user].inspect
     if @user.save
       redirect_to root_url, :notice => "Signed up!"
     else
