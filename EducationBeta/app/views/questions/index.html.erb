@@ -63,7 +63,7 @@
 			      <td><%= link_to question.description, user_question_path({:user_id => current_user.id, :id => question.id})  %></td>
 			      <td><%= question.tutor.email %></td>
 			      <td><%= question.status %></td>
-				  <td><div style="height: 3px;">&nbsp;</div><div class="actionbar"><a href="" class="action view"><span>View</span></a><a href="" class="action edit"><span>Edit</span></a><a href="" class="action delete"><span>Delete</span></a></div></td>	
+				  <td><div style="height: 3px;">&nbsp;</div><div class="actionbar"><a href="" class="action view"><span>View</span></a><a href="" class="action edit"><span>Edit</span></a>	
 			    </tr>
 			    <%end%>
 			</table><!-- Table Wrapper End -->

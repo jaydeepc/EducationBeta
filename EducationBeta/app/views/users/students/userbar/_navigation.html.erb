@@ -10,7 +10,11 @@
     <li><a href="#">Advanced Mathematics</a></li>
   </ul>
   </li>
-  <li><%=link_to "Ask a question", new_user_question_path({:user_id => current_user.id}), :class => "icon_email" %></li>
+  <li><%=link_to "Ask a question", new_user_question_path({:user_id => current_user.id}), :class => "icon_email" %>
+	  <ul>
+	    <li><%=link_to "My Questions", user_questions_path({:user_id => current_user.id}) %></li>
+	  </ul>
+  </li>
   <li><a href="#" class="icon_folder">Edu-Catchup</a>
   <ul>
     <li><a href="#">Invite a Friend</a></li>
