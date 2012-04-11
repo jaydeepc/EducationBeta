@@ -46,6 +46,16 @@
 		</div>
 		<div class="block_cont">
 			<%= form_for([current_user,@question], :method => "PUT", :html => {:class => "form"}) do |f| %>
+        <% if @question.errors.any? %>
+          <div class="error_messages">
+            <h2>Form is invalid</h2>
+            <ul>
+              <% for message in @question.errors.full_messages %>
+                <li><%= message %></li>
+              <% end %>
+            </ul>
+          </div>
+        <% end %>
 				<div class="form_row">
 					<label>Summary:</label>
 						<input class="input validate[required] tipRight" type="text" style="width: 290px;" name="req" id="req" placeholder="Enter title" original-title=".tipRight - right tooltip by tipsy" />
