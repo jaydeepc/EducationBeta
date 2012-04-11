@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  attr_accessible :name, :email, :password, :password_confirmation, :user_type
+  attr_accessible :name, :email, :password, :password_confirmation, :type
 
   attr_accessor :password
   before_save :encrypt_password
@@ -9,8 +9,8 @@ class User < ActiveRecord::Base
   validates_presence_of :email
   validates_presence_of :name
   validates_uniqueness_of :email
-  validates_inclusion_of :user_type, :in => %w(Tutor Student)
-  validates_presence_of :user_type
+  validates_inclusion_of :type, :in => %w(Tutor Student)
+  validates_presence_of :type
 
   def self.authenticate(email, password)
     user = find_by_email(email)
@@ -22,7 +22,7 @@ class User < ActiveRecord::Base
   end
 
   def is_tutor?
-    true ? self.user_type == "Tutor" : false
+    true ? self.type == "Tutor" : false
   end
 
   private
