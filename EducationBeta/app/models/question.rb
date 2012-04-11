@@ -6,7 +6,8 @@ class Question < ActiveRecord::Base
   belongs_to :subject
 
   validates_presence_of :status
-  validates_presence_of :student_id
-  validates_presence_of :tutor_id
+  validates :student_id, :presence => true, :numericality => true
+  validates :tutor_id, :presence => true, :numericality => true
+  validates :subject_id, :presence => true, :numericality => true
   validates_presence_of :description
  end

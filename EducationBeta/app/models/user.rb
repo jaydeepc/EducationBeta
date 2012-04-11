@@ -6,11 +6,9 @@ class User < ActiveRecord::Base
 
   validates_confirmation_of :password
   validates_presence_of :password, :on => :create
-  validates_presence_of :email
+  validates :email, :uniqueness => true
   validates_presence_of :name
-  validates_uniqueness_of :email
-  validates_inclusion_of :type, :in => %w(Tutor Student)
-  validates_presence_of :type
+  validates :type, :presence => true, :inclusion => {:in => %w(Tutor Student)}
 
   def self.authenticate(email, password)
     user = find_by_email(email)
