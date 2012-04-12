@@ -58,9 +58,9 @@
           </div>
         <% end %>
 				<div class="form_row">
-					<label>Summary:</label>
-						<input class="input validate[required] tipRight" type="text" style="width: 290px;" name="req" id="req" placeholder="Enter title"/>
-						</div>
+          <%= f.label :title %>
+          <%= f.text_field :title, :class=>"input validate[required] tipRight",:place_holder=>"Enter title",:style=>"width: 290px;" %>
+        </div>
 				<div class="form_row">
 					<%= f.label :tutor %>
 					<%= select_tag :tutor, options_for_select(Tutor.find(:all).collect(&:email)), :class => "select" %><br />

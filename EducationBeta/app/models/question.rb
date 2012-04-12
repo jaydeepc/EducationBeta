@@ -1,5 +1,5 @@
 class Question < ActiveRecord::Base
-  attr_accessible :student_id, :tutor_id, :subject_id, :description, :status
+  attr_accessible :student_id, :tutor_id, :subject_id, :description, :status, :title
 
   belongs_to :tutor
   belongs_to :student
@@ -10,4 +10,5 @@ class Question < ActiveRecord::Base
   validates :tutor_id, :presence => true, :numericality => true
   validates :subject_id, :presence => true, :numericality => true
   validates_presence_of :description
+  validates_presence_of :title
  end
