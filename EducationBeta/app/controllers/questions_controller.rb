@@ -25,6 +25,11 @@ class QuestionsController < ApplicationController
 
   def show
     @question = Question.find(params[:id])
+    if current_user.is_tutor?
+      render "questions/tutors/show" 
+    else
+      render "questions/students/show"
+    end
   end
 
   def index
