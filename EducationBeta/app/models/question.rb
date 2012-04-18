@@ -4,7 +4,7 @@ class Question < ActiveRecord::Base
   belongs_to :tutor
   belongs_to :student
   belongs_to :subject
-  has_many :answer
+  has_many :answers
 
   validates_presence_of :status
   validates :student_id, :presence => true, :numericality => true

@@ -1,5 +1,5 @@
 class CreateAnswer < ActiveRecord::Migration
-  def up
+  def self.up
     create_table :answers do |t|
       t.integer :question_id
       t.string :description
@@ -7,7 +7,7 @@ class CreateAnswer < ActiveRecord::Migration
     end
   end
 
-  def down
+  def self.down
     drop_table :answers
   end
 end
