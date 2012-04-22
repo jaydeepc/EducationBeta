@@ -1,3 +1,4 @@
+
 <%= stylesheet_link_tag "grid" %>
 <%= stylesheet_link_tag "reset" %>
 <%= stylesheet_link_tag "sessions" %>
@@ -40,33 +41,14 @@
   <div id="body">
     <div class="block big"><!-- Block Begin -->
       <div class="titlebar">
-        <h3>Question <%=@question.id%></h3>
+        <h3>Answer <%=@answer.id%></h3>
         <a href="#" class="toggle">&nbsp;</a>
       </div>
       <div class="block_cont">
         <div class="form_row">
-          <p>Title</p>
-          <p><%= @question.title%></p>
-        </div>
-        <div class="form_row">
-          <p>Tutor</p>
-          <p><%=@question.tutor.email%></p>
-        </div>
-        <div class="form_row">
-          <p>Subject</p>
-          <p><%= @question.subject.subject%></p>
-        </div>
-        <div class="form_row">
           <p>Description</p>
-          <p> <%=@question.description%></p>
+          <p> <%=@answer.description%></p>
         </div>
-        <div>
-          <%if @question.answers.empty? %>
-            <p><%= link_to "Answer",new_user_question_answer_path({:user_id => current_user.id, :question_id => @question.id})%></p>
-          <%else%>
-            <p><%= link_to user_question_answer_path(:user_id => current_user.id, :question_id => @question.id, :id => @question.answers.first), "answer"%></p>
-          <%end%>
-        </div>  
       </div>
     </div><!-- Block End -->
   </div>

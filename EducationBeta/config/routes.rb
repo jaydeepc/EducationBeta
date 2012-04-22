@@ -6,7 +6,9 @@ EducationBeta::Application.routes.draw do
   root :to => "welcome#show"
   
   resources :users do 
-    resources :questions
+    resources :questions do
+      resources :answers
+    end
   end 
   resources :sessions
 
