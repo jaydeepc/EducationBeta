@@ -45,10 +45,20 @@
         <a href="#" class="toggle">&nbsp;</a>
       </div>
       <div class="block_cont">
-        <div class="form_row">
-          <p>Description</p>
-          <p> <%=@answer.description%></p>
-        </div>
-      </div>
-    </div><!-- Block End -->
+			<%= form_for([current_user,@question,@answer], :method => "PUT", :html => {:class => "form"}) do |f| %>
+        <% if @answer.errors.any? %>
+          <div class="error_messages">
+            <h2>Form is invalid</h2>
+            <ul>
+              <% for message in @answer.errors.full_messages %>
+                <li><%= message %></li>
+              <% end %>
+            </ul>
+          </div>
+        <% end %>
+        <div class="form_row"><%= f.label :description %><br /><%= f.text_area :description, :id => "htmleditor" %></div>
+				<div class="clear"></div><br />
+				<div class="form_row"><%= f.submit :class => "submit" %></div>
+			<% end %>
+		</div>
   </div>

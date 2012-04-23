@@ -1,6 +1,8 @@
 class QuestionsController < ApplicationController
 
   before_filter :require_user
+  before_filter :is_allowed, :only => [:create, :update]
+  helper_method :is_allowed
 
   def new
     @question = Question.new
@@ -26,6 +28,7 @@ class QuestionsController < ApplicationController
   def show
     @question = Question.find(params[:id])
     if current_user.is_tutor?
+      @question.update_attributes({:status=>"being answered"}) if @question.answer.nil?
       render "questions/tutors/show" 
     else
       render "questions/students/show"
@@ -46,7 +49,15 @@ class QuestionsController < ApplicationController
    if @question.update_attributes(question_params)
      redirect_to user_questions_path
    else
-     render "new"
+     render "show"
    end  
+  end
+  
+  private
+  def is_allowed
+    unless current_user.type == 'Student'
+      redirect_to("/422.html")
+      return false
+    end
   end
 end
