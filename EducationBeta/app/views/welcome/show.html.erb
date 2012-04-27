@@ -1,1 +1,76 @@
+<%= stylesheet_link_tag "grid" %>
+<%= stylesheet_link_tag "reset" %>
+<%= stylesheet_link_tag "sessions" %>
+<%= stylesheet_link_tag "style" %>
+<%= stylesheet_link_tag "plugins" %>
 
+
+<%= javascript_include_tag "jquery-1.7.1.min.js" %>
+<%= javascript_include_tag "ui/jquery-ui-1.8.17.custom.min.js" %>
+<%= javascript_include_tag "jquery.corner.js" %>
+<%= javascript_include_tag "jquery.validate.js" %>
+<%= javascript_include_tag "css_browser_selector.js" %>
+<%= javascript_include_tag "jquery.jqplot.min.js" %>
+<%= javascript_include_tag "plugins/jqplot.highlighter.min.js" %>
+<%= javascript_include_tag "plugins/jqplot.cursor.min.js" %>
+<%= javascript_include_tag "plugins/jqplot.dateAxisRenderer.min.js" %>
+<%= javascript_include_tag "editor/jquery.cleditor.min.js" %>
+<%= javascript_include_tag "calendar/fullcalendar.min.js" %>
+<%= javascript_include_tag "jquery.multiselect.min.js" %>
+<%= javascript_include_tag "tooltip/jquery.tipsy.js" %>
+<%= javascript_include_tag "validation/jquery.validationEngine.js" %>
+<%= javascript_include_tag "validation/languages/jquery.validationEngine-en.js" %>
+<%= javascript_include_tag "jquery.dataTables.min.js" %>
+<%= javascript_include_tag "fancybox/jquery.fancybox-1.3.4.pack.js" %>
+<%= javascript_include_tag "fancybox/jquery.easing-1.4.pack.js" %>
+<%= javascript_include_tag "js.js" %>
+
+<div id="main" class="container_12"><!-- Body Wrapper Begin -->
+  <div id="header"><!-- Header Begin -->
+    <div class="grid_3"><a href="#" id="logo" class="float_left">EducationBeta</a></div>
+    <div class="grid_4 push_5">
+      <%= render "shared/header_search"%>
+    </div>
+  </div><!-- Header End -->
+  <div class="clear"></div>
+
+<div id="userbar"><!-- Userbar Begin -->
+</div>
+<div>
+<div id="body">
+	<div class="block"><!-- Block Begin -->
+	  <div class="titlebar">
+	    <h3></h3>
+	  </div>
+	  <div class="block_cont">
+	    <div id="chart1" class="landing_image" style="height:200px;"></div>
+	  </div>
+	</div>
+
+	
+	<div class="block small"><!-- Block Begin -->
+	  <div class="titlebar">
+	    <h3>Login</h3>
+	  <div class="block_cont" style="background: url('title_txt.png') 0 0 no-repeat;">
+	    <div id="chart2" style="height:200px; width:100%;">
+	    	<%= form_tag sessions_path do %> 
+			<div id="loginbox">
+				<a href="#" id="logo">EducationBeta</a>
+				<div id="loginform">
+					<form name="login" action="cp_main.html" method="get">
+						<div id="username_field"><%= text_field_tag :email, params[:email], :class => 'required' %></div>
+						<div id="password_field"><%= password_field_tag :password, nil, :class => 'required' %></div>
+						<div id="buttonline">
+							<%= submit_tag "Log in", :class => 'float_left width_4', :id => 'loginbutton' %>
+							<a href="#" class="passforgot float_right">Forgot your password?</a>
+						</div>
+					</form>	
+				</div>
+			</div>
+			<% end %>
+	    </div>
+	  </div>	
+	</div>
+</div>	
+
+</div>

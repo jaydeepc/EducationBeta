@@ -395,7 +395,7 @@ div.information .hide_btn:hover {
 
 #userbar {
 	height: 65px;
-	margin: 5px;
+	margin: 4px;
 	background: url('images/userbar_bg.png') top repeat-x;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -645,6 +645,13 @@ div.information .hide_btn:hover {
 	margin: 10px 0;
 }
 
+.block small {
+	float: right;
+}
+
+.landing_image{
+    background: url('landing.jpg') repeat-x;
+}
 
 .block {
 	margin-bottom: 10px;
@@ -654,6 +661,8 @@ div.information .hide_btn:hover {
 	-webkit-box-shadow: 1px 2px 2px #323a43;
 	-moz-box-shadow: 1px 2px 2px #323a43;
 	box-shadow: 1px 2px 2px #323a43;
+	width: 640px;
+	float: left;
 }
 
 .block .titlebar {
