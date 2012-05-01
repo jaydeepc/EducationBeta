@@ -1016,6 +1016,39 @@ div.information .hide_btn:hover {
 
 /******************** LOGIN BOX **********************/
 
+#registrationbox {
+	width: 480px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -140px;
+	margin-top: -100px;
+
+}
+
+#registrationbox #registrationform {
+	margin: 10px 0 0 0;
+	padding: 15px;
+	background: url('images/loginbox_bg.png') repeat;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border-bottom: 1px solid #58626f;
+	border-right: 1px solid #58626f;
+}
+
+#registrationbox #reg_field {
+	width: 250px;
+	height:36px;
+	background: url('images/loginbox_username.png') repeat;
+}
+
+#registrationbox #password_field {
+	width: 250px;
+	height:36px;
+	margin: 5px 0 0 0;
+	background: url('images/loginbox_password.png') repeat;
+}
 
 #loginbox {
 	width: 280px;
