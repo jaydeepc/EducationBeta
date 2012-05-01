@@ -1,8 +1,10 @@
 class QuestionsController < ApplicationController
 
   before_filter :require_user
-  before_filter :is_allowed, :only => [:create, :update]
+  before_filter :is_allowed, :only => [:new, :create, :update]
+  before_filter :can_update, :only => [:update]
   helper_method :is_allowed
+  helper_method :can_update
 
   def new
     @question = Question.new
@@ -59,5 +61,15 @@ class QuestionsController < ApplicationController
       redirect_to("/422.html")
       return false
     end
+    return true
+  end
+
+  private
+  def can_update
+    unless Question.find(params[:id]).status == 'new'
+      redirect_to("/422.html")
+      return false
+    end
+    return true
   end
 end

@@ -45,38 +45,16 @@
         <a href="#" class="toggle">&nbsp;</a>
       </div>
       <div class="block_cont">
-        <%= form_for([current_user,@question], :method => "PUT", :html => {:class => "form"}) do |f| %>
-          <% if @question.errors.any? %>
-            <div class="error_messages">
-              <h2>Form is invalid</h2>
-              <ul>
-                <% for message in @question.errors.full_messages %>
-                  <li><%= message %></li>
-                <% end %>
-              </ul>
-            </div>
-          <% end %>
-          <div class="form_row">
-            <%= f.label :title %>
-            <%= f.text_field :title, :class=>"input validate[required] tipRight",:place_holder=>"Enter title",:style=>"width: 290px;", :value=>@question.title %>
-          </div>
-          <div class="form_row">
-            <%= f.label :tutor %>
-            <%= select_tag :tutor, options_for_select(Tutor.find(:all).collect(&:email), :selected => @question.tutor.email), :class => "select" %><br />
-          </div>
-          <div class="form_row">
-            <%= f.label :subject %>
-            <%= select_tag :subject, options_for_select(Subject.find(:all).collect(&:subject), :selected => @question.subject.subject), :class => "select" %><br />
-          </div>
-          <div class="form_row"><%= f.label :description %><br /><%= f.text_area :description, :id => "htmleditor", :value => @question.description %></div>
-          <div class="clear"></div><br />
-          <div class="form_row"><%= f.submit :class => "submit" %></div>
-          <div>
-            <%unless @question.answer.nil? %>
-              <p><%= link_to "Answer", user_question_answer_path({:user_id => current_user.id, :question_id => @question.id, :id => @question.answer})%></p>
-            <%end%>
-        </div>  
-        <% end %>
+        <%if @question.status == "new"%>
+          <%= render "questions/question_form" %>
+        <%else%>
+          <%= render "questions/question_description" %>
+        <%end%>
+        <div>
+          <%unless @question.answer.nil? %>
+            <p><%= link_to "Answer", user_question_answer_path({:user_id => current_user.id, :question_id => @question.id, :id => @question.answer})%></p>
+          <%end%>
+        </div>
       </div>
     </div><!-- Block End -->
   </div>
