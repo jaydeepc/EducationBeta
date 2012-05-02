@@ -25,6 +25,14 @@
 <%= javascript_include_tag "fancybox/jquery.easing-1.4.pack.js" %>
 <%= javascript_include_tag "js.js" %>
 
+<script language="javascript" type="text/javascript">
+function popitup(url) {
+	newwindow=window.open(url,'name',"titlebar=0,toolbar=0,location=0,status=0,menubar=0,resizable=no,width=320,height=420,top=200,left=450");
+	if (window.focus) {newwindow.focus()}
+	return false;
+}
+</script>
+
 <div id="main" class="container_12"><!-- Body Wrapper Begin -->
   <div id="header"><!-- Header Begin -->
     <div class="grid_3"><a href="#" id="logo" class="float_left">EducationBeta</a></div>
@@ -35,6 +43,27 @@
   <div class="clear"></div>
 
 <div id="userbar"><!-- Userbar Begin -->
+  <div id='menu-centered1' align="center">	
+	<ul id="navigation"><!-- Main Navigation Begin -->
+	  <li><a href="#" class="icon_home">Home</a></li>
+	  <li><a href="#" class="icon_profile">About Us</a></li>	
+	  <li><a href="#" class="icon_users">Boards</a>
+	  <ul>
+	    <li style="width: 189px;"><a href="#">Assam</a></li>
+	    <li style="width: 189px;"><a href="#">CBSE</a></li>
+	    <li style="width: 189px;"><a href="#">Karnataka</a></li>
+	  </ul>
+	  </li>
+	  <li><a href="#" class="icon_comment">Edu-Catchup</a>
+	  <ul>
+	    <li style="width: 189px;"><a href="#">Invite a Friend</a></li>
+	    <li style="width: 189px;"><a href="#">Feeds From Students</a></li>	
+	    <li style="width: 189px;"><a href="#">Students Forum</a></li>
+	  </ul>
+	  </li>
+	  <li><a href="#" class="icon_email">Contact Us</a></li>	
+	</ul>
+  </div>	
 </div>
 <div>
 <div id="body">
@@ -66,11 +95,50 @@
 						</div>
 					</form>	
 				</div>
+				<a href="#" onclick="return popitup('/sign_up')" class="registration">Join Now For Free Access</a>
 			</div>
 			<% end %>
 	    </div>
 	  </div>	
 	</div>
 </div>	
+</div>
+<div id="body">
+	
+	<div class="block_landing small"><!-- Block Begin -->
+	  <div class="block_cont1">
+	    <div class="div_bg" style="height:200px;">
+			<div class="blue">
+				<h3>Track your performance</h3>
+				<p>Find out your weak areas with the help of various Reports we provide to track your performance. Also help you compare your performance with peers</p>
+				<a href="#" title="more" class="more">more</a>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 
+	<div class="block_landing small"><!-- Block Begin -->
+	  <div class="block_cont1">
+	    <div class="div_bg" style="height:200px;">
+			<div class="blue">
+				<h3>Regular Tests</h3>
+				<p>A power packed regular series of tests in each subject keeps you ready for the actual examinations. Percentile scores to compare your performance with other students </p>
+				<a href="#" title="more" class="more">more</a>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	
+	<div class="block_landing small"><!-- Block Begin -->
+	  <div class="block_cont1">
+	    <div class="div_bg" style="height:200px;">
+			<div class="blue">
+				<h3>Study Material</h3>
+				<p>Our extensive study materials, designed by our experts, makes sure you get thorough and complete understanding of each and every topic.</p>
+				<a href="#" title="more" class="more">more</a>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	
 </div>

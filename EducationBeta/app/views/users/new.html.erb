@@ -26,15 +26,27 @@
 <%= javascript_include_tag "fancybox/jquery.easing-1.4.pack.js" %>
 <%= javascript_include_tag "js.js" %>
 
+<style>
+#title_text{
+	display: none;
+}
+#user_nav{
+	display:none;
+}
+body { overflow: hidden; }
+
+menubar, toolbar {
+display: none;
+}
+</style>
 
 <body>
 		<div id="body">
-			<div class="block big"><!-- Block Begin -->
+			<div class="block big" style="width: 300px;"><!-- Block Begin -->
 				<div class="titlebar">
 					<h3>Register</h3>
-					<a href="#" class="toggle">&nbsp;</a>
 				</div>
-				<div class="block_cont">
+				<div class="block_cont" style="height:340px;">
 					<%= form_for(@user, :method => "POST", :html => {:class => "form"}) do |f| %>
 						<div class="form_row">
 						  <%= f.label :name %>
