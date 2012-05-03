@@ -1,4 +1,3 @@
-
 <%= stylesheet_link_tag "grid" %>
 <%= stylesheet_link_tag "reset" %>
 <%= stylesheet_link_tag "sessions" %>
@@ -27,21 +26,53 @@
 <%= javascript_include_tag "js.js" %>
 
 <style>
-#title_text{
-	display: none;
-}
 #user_nav{
 	display:none;
 }
-body { overflow: hidden; }
-
-menubar, toolbar {
-display: none;
-}
 </style>
 
-<body>
+<div id="main" class="container_12"><!-- Body Wrapper Begin -->
+  <div id="header"><!-- Header Begin -->
+    <div class="grid_3"><a href="#" id="logo" class="float_left">EducationBeta</a></div>
+    <div class="grid_4 push_5">
+      <%= render "shared/header_search"%>
+    </div>
+  </div><!-- Header End -->
+  <div class="clear"></div>
+
+<div id="userbar"><!-- Userbar Begin -->
+  <div id='menu-centered1' align="center">	
+	<ul id="navigation"><!-- Main Navigation Begin -->
+	  <li><a href="#" class="icon_home">Home</a></li>
+	  <li><a href="#" class="icon_profile">About Us</a></li>	
+	  <li><a href="#" class="icon_users">Boards</a>
+	  <ul>
+	    <li style="width: 189px;"><a href="#">Assam</a></li>
+	    <li style="width: 189px;"><a href="#">CBSE</a></li>
+	    <li style="width: 189px;"><a href="#">Karnataka</a></li>
+	  </ul>
+	  </li>
+	  <li><a href="#" class="icon_comment">Edu-Catchup</a>
+	  <ul>
+	    <li style="width: 189px;"><a href="#">Invite a Friend</a></li>
+	    <li style="width: 189px;"><a href="#">Feeds From Students</a></li>	
+	    <li style="width: 189px;"><a href="#">Students Forum</a></li>
+	  </ul>
+	  </li>
+	  <li><a href="#" class="icon_email">Contact Us</a></li>	
+	</ul>
+  </div>	
+</div>
 		<div id="body">
+			<div class="block"><!-- Block Begin -->
+			  <div class="titlebar">
+			    <h3></h3>
+			  </div>
+			  <div class="block_cont">
+			    <div id="chart1" class="reg_image" style="height:340px;"></div>
+			  </div>
+			</div>
+			
 			<div class="block big" style="width: 300px;"><!-- Block Begin -->
 				<div class="titlebar">
 					<h3>Register</h3>
@@ -66,7 +97,7 @@ display: none;
 						</div>		
 						<div class="form_row">
 							<%= f.label :user_type %>
-							<%= select_tag :type, options_for_select(["Student","Tutor"], "Student"), :class => "select",:style => "width: 260px;" %><br />
+							<%= f.select :type, options_for_select(["Student","Tutor"], "Student"), {:style => "width: 260px;"}, {:class => "select"} %><br />
 						</div>				
 						<div class="form_row"><%= f.submit :class => "submit" %></div>
 					<% end %>
@@ -74,4 +105,3 @@ display: none;
 			</div><!-- Block End -->
 		</div>
 	</div><!-- Body Wrapper End -->
-</body>

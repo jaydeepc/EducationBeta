@@ -100,6 +100,7 @@ ul li {
 
 .form .select {
 	height: 30px;
+	width: 260px;
 	padding: 5px;
 	border: 1px solid #8e9bac;
 	-webkit-border-radius: 5px;
@@ -655,6 +656,10 @@ div.information .hide_btn:hover {
     background: url('landing.jpg') repeat-x;
 }
 
+.reg_image{
+    background: url('images/bilde.jpeg') repeat-x;
+}
+
 .div_bg{
     background: url('images/loginbox_bg.png') repeat-x;
 }
@@ -774,7 +779,7 @@ div.information .hide_btn:hover {
 .block .block_cont {
 	color: #2e333b;
 	padding: 10px;
-	background: #ffffff url('images/block_cont_shadow.png') top repeat-x;
+	background: #ffffff url('loginbox_bg.png') top repeat-x;
 	-webkit-border-bottom-right-radius: 5px;
 	-webkit-border-bottom-left-radius: 5px;
 	-moz-border-radius-bottomright: 5px;
