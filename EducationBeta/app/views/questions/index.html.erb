@@ -35,8 +35,13 @@
   </div><!-- Header End -->
   <div class="clear"></div>
 <div id="userbar"><!-- Userbar Begin -->
-<%= render "users/students/userbar/profile"%>
-<%= render "users/students/userbar/navigation"%>
+<% if current_user.is_tutor? %>	
+	<%= render "users/tutors/userbar/profile"%>
+	<%= render "users/tutors/userbar/navigation"%>
+<% else %>
+	<%= render "users/students/userbar/profile"%>
+	<%= render "users/students/userbar/navigation"%>
+<% end %>	
 </div>
 
 

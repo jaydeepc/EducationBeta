@@ -1,0 +1,23 @@
+<ul id="navigation"><!-- Main Navigation Begin -->
+  <li class="activepage"><a href="#" class="icon_stats">Dashboard</a></li>
+  <li><a href="#" class="icon_users">Create Notes</a>
+  <ul>
+    <li><a href="#">English</a></li>
+    <li><a href="#">Bengali</a></li>
+    <li><a href="#">Social Studies</a></li>
+    <li><a href="#">Science</a></li>
+    <li><a href="#">Mathematics</a></li>
+    <li><a href="#">Advanced Mathematics</a></li>
+  </ul>
+  </li>
+  <li><%=link_to "Questions For You", user_questions_path({:user_id => current_user.id}), :class => "icon_email" %></li>
+  <li><a href="#" class="icon_folder">Edu-Catchup</a>
+  <ul>
+    <li><a href="#">Invite a Friend</a></li>
+    <li><a href="#">Feeds From Students</a></li>	
+    <li><a href="#">Students Forum</a></li>
+  </ul>
+  </li>
+  <li><%= link_to "Logout", log_out_path, :class => "icon_logout" %></li>
+</ul><!-- Main Navigation End -->
+
