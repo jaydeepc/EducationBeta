@@ -510,7 +510,6 @@ div.information .hide_btn:hover {
 #navigation li {
 	height: 65px;
 	margin: 0;
-	width: 189px;
 	border-left: 1px solid #343b47;
 	float: left;
 	position: relative;
@@ -568,7 +567,7 @@ div.information .hide_btn:hover {
 
 #navigation li ul li {
 	height: auto;
-	width: 160px;
+/*  width: 160px;*/
 	background: url('images/userbar_bg.png') top repeat-x;
 	border-right: 1px solid #343b47;
 	border-bottom: 1px solid #343b47;
