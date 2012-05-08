@@ -1,3 +1,4 @@
+
 <div class="form_row">
   <p>Title</p>
   <p><%= @question.title%></p>
@@ -12,5 +13,5 @@
 </div>
 <div class="form_row">
   <p>Description</p>
-  <p> <%=@question.description%></p>
+  <p> <%= raw @question.description%></p>
 </div>
