@@ -5,6 +5,16 @@
     <%= stylesheet_link_tag    "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
+
+	<style>
+	#navigation li {
+		width: 141px;
+	}
+	#navigation li ul li {
+		width: 141px;
+	}
+	</style>
+	
   </head>
   <body>
     <h2> <div class="grid_3"><%= link_to "", root_url, :id => "title_text" %></div>
