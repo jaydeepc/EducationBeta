@@ -47,12 +47,8 @@
 
 <div id="body">
 	<div class="block big"><!-- Block Begin -->
-		<div class="titlebar">
-			<h3>Ask a Question</h3>
-			<a href="#" class="toggle">&nbsp;</a>
-		</div>
 		<div class="block_cont">
-			<%= form_for([current_user,@question,@answer], :method => "POST", :html => {:class => "form"}) do |f| %>
+		<%= form_for([current_user,@question,@answer], :method => "POST", :html => {:class => "form"}) do |f| %>
         <% if @answer.errors.any? %>
           <div class="error_messages">
             <h2>Form is invalid</h2>

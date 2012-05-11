@@ -24,6 +24,7 @@
 <%= javascript_include_tag "fancybox/jquery.easing-1.4.pack.js" %>
 <%= javascript_include_tag "js.js" %>
 
+
 <div id="main" class="container_12"><!-- Body Wrapper Begin -->
   <div id="header"><!-- Header Begin -->
     <div class="grid_3"><a href="#" id="logo" class="float_left">EducationBeta</a></div>
@@ -49,9 +50,10 @@
           <%if @question.answer.nil? %>
             <p><%= link_to "Answer",new_user_question_answer_path({:user_id => current_user.id, :question_id => @question.id})%></p>
           <%else%>
-            <p><%= link_to "Answer", user_question_answer_path({:user_id => current_user.id, :question_id => @question.id, :id => @question.answer})%></p>
+            <p><%= link_to "Answer", user_question_answer_path({:user_id => current_user.id, :question_id => @question.id, :id => @question.answer}), :onclick => "switchPic('test')"%></p>
           <%end%>
         </div>  
       </div>
     </div><!-- Block End -->
   </div>
+

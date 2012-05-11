@@ -1,17 +1,6 @@
-
 <div class="form_row">
-  <p>Title</p>
-  <p><%= @question.title%></p>
-</div>
-<div class="form_row">
-  <p>Tutor</p>
-  <p><%=@question.tutor.email%></p>
-</div>
-<div class="form_row">
-  <p>Subject</p>
-  <p><%= @question.subject.subject%></p>
-</div>
-<div class="form_row">
-  <p>Description</p>
+<div class="q_title_des">	
+  <h1><%= @question.title %></h1>
   <p> <%= raw @question.description%></p>
+</div>
 </div>
