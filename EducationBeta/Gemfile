@@ -29,6 +29,7 @@ gem 'bcrypt-ruby', '~> 3.0.0', :require => "bcrypt"
 gem 'execjs'
 
 gem 'therubyracer'
+gem 'uuidtools'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'

@@ -2,6 +2,7 @@ class SessionsController < ApplicationController
 
   before_filter :require_user, :only => :destroy
   before_filter :require_no_user, :only => [:new, :create]
+  before_filter :is_registered, :only => [:create]
 
   def new
   end
@@ -21,5 +22,16 @@ class SessionsController < ApplicationController
   def destroy
     session[:user_id] = nil
     redirect_to root_url, :notice => "Logged out!"
+  end
+
+  private
+  def is_registered
+    begin
+      unless User.find_by_email(params[:email]).status == "registered"
+        redirect_to root_url, :notice => "You are not successfully registered yet. Please follow the validation email to successfully register"
+      end
+    rescue
+      redirect_to("/500.html")
+    end
   end
 end

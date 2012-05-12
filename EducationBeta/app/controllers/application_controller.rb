@@ -16,13 +16,13 @@ class ApplicationController < ActionController::Base
     end
     unless params[:user_id].nil?
       unless current_user == User.find(params[:user_id])
-        redirect_to("/422.html")
+        redirect_to("/401.html")
         return false
       end
     end
     if params[:user_id].nil? && !params[:id].nil?
       unless current_user == User.find(params[:id])
-        redirect_to("/422.html")
+        redirect_to("/401.html")
         return false
       end
     end

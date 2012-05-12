@@ -50,7 +50,7 @@ class AnswersController < ApplicationController
   private
   def is_allowed
     unless current_user.type == 'Tutor'
-      redirect_to("/422.html")
+      redirect_to("/403.html")
       return false
     end
   end
