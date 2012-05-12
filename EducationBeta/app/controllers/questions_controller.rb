@@ -58,7 +58,7 @@ class QuestionsController < ApplicationController
   private
   def is_allowed
     unless current_user.type == 'Student'
-      redirect_to("/422.html")
+      redirect_to("/403.html")
       return false
     end
     return true
@@ -67,7 +67,7 @@ class QuestionsController < ApplicationController
   private
   def can_update
     unless Question.find(params[:id]).status == 'new'
-      redirect_to("/422.html")
+      redirect_to("/403.html")
       return false
     end
     return true

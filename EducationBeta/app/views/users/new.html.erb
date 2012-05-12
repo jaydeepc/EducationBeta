@@ -85,6 +85,16 @@
 				</div>
 				<div class="block_cont" style="height:340px;">
 					<%= form_for(@user, :method => "POST", :html => {:class => "form"}) do |f| %>
+            <% if @user.errors.any? %>
+              <div class="error_messages">
+                <h2>Form is invalid</h2>
+                <ul>
+                  <% for message in @user.errors.full_messages %>
+                    <li><%= message %></li>
+                  <% end %>
+                </ul>
+              </div>
+            <% end %>
 						<div class="form_row">
 						  <%= f.label :name %>
 				          <%= f.text_field :name, :class=>"input validate[required] tipRight",:style => "width: 250px;" %>
