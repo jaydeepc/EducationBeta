@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
 
   validates_confirmation_of :password
   validates_presence_of :password, :on => :create
-  validates :email, :uniqueness => true
+  validates :email, :uniqueness => true, :format => { :with => /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i}
   validates_presence_of :name
   validates_presence_of :status
   validates_presence_of :validation_uuid
