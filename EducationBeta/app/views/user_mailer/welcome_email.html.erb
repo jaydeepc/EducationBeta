@@ -1,17 +1,36 @@
-<!DOCTYPE html>
+
 <html>
   <head>
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
   </head>
-  <body>
-    <h1>Welcome to example.com, <%= @user.name %></h1>
-    <p>
-    You have successfully signed up to example.com,
-    your username is: <%= @user.email %>.<br/>
-    </p>
-    <p>
-    To confirm your registration, just follow this link: <%= @url %>.
-    </p>
-    <p>Thanks for joining and have a great day!</p>
+  <body>	
+	<table align="center" style="height:80px;width: 100%;">
+		<tr style="width:80px;">
+			<td><img src="http://localhost:3000/images/title_txt.png" style="height: 110px;" /></td>
+		</tr>
+		<tr style="width:150px;">
+			<td><img src="http://localhost:3000/images/landing_logo.jpg" style="height: 200px;width: 640px" /></td>
+		</tr>
+		<tr style="width:80px;">
+			<td><h1>Welcome to EducationBeta, <%= @user.name %></h1></td>
+		</tr>
+		<tr style="">
+			<td>You have successfully signed up to EducationBeta.com</td>
+		</tr>
+		<tr style="">
+			<td>
+				<ul>
+				<li>Your username is: <%= @user.email %>
+				<li>Your password is: test123
+				</ul>
+			</td>
+		</tr>
+		<tr style="">
+			<td></td>
+		</tr>
+		<tr style="">
+			<td>To confirm your registration, just follow this link: <%= @url %></td>
+		</tr>
+	</table>	
   </body>
 </html>
