@@ -12,12 +12,17 @@ class UsersController < ApplicationController
     params[:user][:validation_uuid] = UUIDTools::UUID.timestamp_create().to_s.gsub!(/-/,'')
     @user = User.new(params[:user])
 
-    if @user.save
-      UserMailer.welcome_email(@user).deliver
-      redirect_to root_url, :notice => "Successfully Signed up!"
-    else
-      render "new"
-    end
+    begin
+      if @user.save
+        @user_subject =  TutorSubject.create(:tutor_id => @user.id, :subject_id => Subject.find_by_subject(params[:subject]).id) if @user.is_tutor?
+        UserMailer.welcome_email(@user).deliver
+        redirect_to root_url, :notice => "Successfully Signed up!"
+      else
+        render "new"
+      end
+    rescue
+      redirect_to("/500.html")
+    end  
   end
 
   def show

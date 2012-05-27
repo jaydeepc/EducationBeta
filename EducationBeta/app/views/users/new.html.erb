@@ -115,6 +115,10 @@
 							<%= f.label :user_type %>
 							<%= f.select :type, options_for_select(["Student","Tutor"], "Student"), {:style => "width: 260px;"}, {:class => "select"} %><br />
 						</div>				
+						<div class="form_row">
+							<%= f.label :subject %>
+              <%= select_tag :subject, options_for_select(Subject.find(:all).collect(&:subject)), :class => "select" %><br />
+            </div>
 						<div class="form_row"><%= f.submit :class => "submit" %></div>
 					<% end %>
 				</div>
