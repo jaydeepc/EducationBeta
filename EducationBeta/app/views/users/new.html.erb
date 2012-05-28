@@ -35,7 +35,21 @@
 #navigation li ul li {
 	width: 160px;
 }
+
 </style>
+
+<script>	
+		function display_sub(list) {
+		var eSelect = document.getElementById('subjects');	
+	    if(list.options[list.selectedIndex].value == "Tutor") {
+	      eSelect.style.display = 'block';
+	    }
+	    else {
+	      eSelect.style.display = 'none';
+	    }
+
+	  }		
+</script>
 
 <div id="main" class="container_12"><!-- Body Wrapper Begin -->
   <div id="header"><!-- Header Begin -->
@@ -75,7 +89,7 @@
 			    <h3></h3>
 			  </div>
 			  <div class="block_cont">
-			    <div id="chart1" class="reg_image" style="height:340px;"></div>
+			    <div id="chart1" class="reg_image" style="height:400px;"></div>
 			  </div>
 			</div>
 			
@@ -83,7 +97,7 @@
 				<div class="titlebar">
 					<h3>Register</h3>
 				</div>
-				<div class="block_cont" style="height:340px;">
+				<div class="block_cont" style="height:400px;">
 					<%= form_for(@user, :method => "POST", :html => {:class => "form"}) do |f| %>
             <% if @user.errors.any? %>
               <div class="error_messages">
@@ -113,12 +127,13 @@
 						</div>		
 						<div class="form_row">
 							<%= f.label :user_type %>
-							<%= f.select :type, options_for_select(["Student","Tutor"], "Student"), {:style => "width: 260px;"}, {:class => "select"} %><br />
-						</div>				
-						<div class="form_row">
+							<%= f.select :type, options_for_select(["Student","Tutor"], "Student"), {:style => "width: 260px;"}, {:class => "select", :onchange => "display_sub(this);"} %><br />
+						</div>	
+						<div id = "subjects" class="form_row" style="display: none;">
 							<%= f.label :subject %>
-              <%= select_tag :subject, options_for_select(Subject.find(:all).collect(&:subject)), :class => "select" %><br />
-            </div>
+              				<%= select_tag :subject, options_for_select(Subject.find(:all).collect(&:subject)),  :class => "select" %><br />
+            			</div>
+						<p></p>
 						<div class="form_row"><%= f.submit :class => "submit" %></div>
 					<% end %>
 				</div>
