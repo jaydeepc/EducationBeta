@@ -80,50 +80,53 @@
 	  </div>
 	</div>
 
-	
-	<div class="block small"><!-- Block Begin -->
-	  <div class="titlebar">
-	    <h3>Login</h3>
-	  <div class="block_cont" style="background: url('title_txt.png') 0 0 no-repeat;">
-	    <div id="chart2" style="height:200px; width:100%;">
-	    	<%= form_tag sessions_path do %> 
-			<div id="loginbox">
-				<a href="#" id="logo">EducationBeta</a>
-				<div id="loginform">
-					<form name="login" action="cp_main.html" method="get">
-						<div id="username_field"><%= text_field_tag :email, params[:email], :class => 'required' %></div>
-						<div id="password_field"><%= password_field_tag :password, nil, :class => 'required' %></div>
-						<div id="buttonline">
-							<%= submit_tag "Log in", :class => 'float_left width_4', :id => 'loginbutton' %>
-							<a href="#" class="passforgot float_right">Forgot your password?</a>
-						</div>
-					</form>	
-				</div>
-				<a href="/sign_up" class="registration">Join Now For Free Access</a>
-			</div>
-			<% end %>
-	    </div>
-	  </div>	
-	</div>
-</div>	
-</div>
-<div id="body">
-	
-	<div class="block_landing small"><!-- Block Begin -->
-	  <div class="block_cont1">
-	    <div class="div_bg" style="height:200px;">
-			<div class="blue">
-				<h3>Track your performance</h3>
-				<p>Find out your weak areas with the help of various Reports we provide to track your performance. Also help you compare your performance with peers</p>
-				<a href="#" title="more" class="more">more</a>
-	      </div>
-	    </div>
-	  </div>
-	</div>
 
-	<div class="block_landing small"><!-- Block Begin -->
-	  <div class="block_cont1">
-	    <div class="div_bg" style="height:200px;">
+  <div class="block small"><!-- Block Begin -->
+    <div class="titlebar">
+      <h3>Login</h3>
+      <div class="block_cont" style="background: url('title_txt.png') 0 0 no-repeat;">
+        <div id="chart2" style="height:200px; width:100%;">
+          <%= form_tag sessions_path do %> 
+            <div id="loginbox">
+              <a href="#" id="logo">EducationBeta</a>
+              <div id="loginform">
+                <form name="login" action="cp_main.html" method="get">
+                  <div id="username_field"><%= text_field_tag :email, params[:email], :class => 'required' %></div>
+                  <div id="password_field"><%= password_field_tag :password, nil, :class => 'required' %></div>
+                  <div id="buttonline">
+                    <%= submit_tag "Log in", :class => 'float_left width_4', :id => 'loginbutton' %>
+                    <a href="#" class="passforgot float_right">Forgot your password?</a>
+                  </div>
+                <% end %>	
+              </div>
+              <a href="/sign_up" class="registration">Join Now For Free Access</a>
+            </div>
+          </div>
+        </div>	
+      </div>
+      <%= link_to "Resend validation link","#", :onclick=>"$('#validation_email_resend_form').fadeIn('slow')"%>
+      <%= form_tag "/resend/validation_email", :id=>"validation_email_resend_form", :style=>"display: none;", :remote=>true do %>
+        <%= text_field_tag "email" %>
+        <%= submit_tag "Resend" %>
+      <% end %>
+    </div>	
+
+  <div id="body">
+    <div class="block_landing small"><!-- Block Begin -->
+      <div class="block_cont1">
+        <div class="div_bg" style="height:200px;">
+          <div class="blue">
+            <h3>Track your performance</h3>
+            <p>Find out your weak areas with the help of various Reports we provide to track your performance. Also help you compare your performance with peers</p>
+            <a href="#" title="more" class="more">more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block_landing small"><!-- Block Begin -->
+      <div class="block_cont1">
+        <div class="div_bg" style="height:200px;">
 			<div class="blue">
 				<h3>Regular Tests</h3>
 				<p>A power packed regular series of tests in each subject keeps you ready for the actual examinations. Percentile scores to compare your performance with other students </p>

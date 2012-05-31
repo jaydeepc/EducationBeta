@@ -72,7 +72,7 @@
 		</div>
         <div class="form_row">
           <%= f.label :tutor %>
-          <%= select_tag :tutor, options_for_select(TutorSubject.find_all_tutors_by_subject("Maths").collect(&:email)), :class => "select" %><br />
+          <%= select_tag :tutor, options_for_select(TutorSubject.find_all_tutors_by_subject("Physics").collect(&:email)), :class => "select" %><br />
         </div>
 				<div class="form_row"><%= f.label :description %><br /><%= f.text_area :description, :id => "htmleditor" %></div>
 				<div class="clear"></div><br />

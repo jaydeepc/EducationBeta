@@ -46,4 +46,21 @@ class UsersController < ApplicationController
       redirect_to("/500.html")
     end
   end
+
+  def resend_validation
+    begin
+      user = User.find_by_email(params[:email])
+      respond_to do |format|
+        if user.status == 'pending'
+          UserMailer.welcome_email(user).deliver
+          format.html {redirect_to root_url, :notice => 'Validation email successfully sent.'}
+          format.js
+        else
+          format.html {redirect_to root_url, :notice => 'User is not in right state to validate.'}
+        end
+      end
+    rescue
+      redirect_to("/500.html")
+    end
+  end
 end

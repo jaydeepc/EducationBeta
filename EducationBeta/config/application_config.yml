@@ -1,5 +1,5 @@
 defaults: &defaults
- domain: locahost
+ domain: localhost
  port: 3000   
 
 development:
