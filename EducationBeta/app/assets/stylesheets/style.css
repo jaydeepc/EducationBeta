@@ -665,6 +665,7 @@ div.information .hide_btn:hover {
 
 .reg_image{
     background: url('images/bilde.jpeg') repeat-x;
+    background-size: cover;
 }
 
 .div_bg{
