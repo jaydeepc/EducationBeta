@@ -21,7 +21,7 @@ class UsersController < ApplicationController
         render "new"
       end
     rescue Exception => e
-      Rails.logger.error e.backtrace 
+      Rails.logger.error(e.message + "\n" + e.backtrace) 
       redirect_to("/500.html")
     end  
   end
@@ -74,7 +74,13 @@ class UsersController < ApplicationController
   def create_tutor_subjects(subjects, user)
     subject_ids = subjects.keys.select {|key| subjects[key] == "1"}
     subject_ids.each do |subject_id|
-      user_subject = TutorSubject.create(:tutor_id => user.id, :subject_id => subject_id)
+      begin
+        user_subject = TutorSubject.new(:tutor_id => user.id, :subject_id => subject_id)
+        user_subject.save!
+      rescue Exception => e
+        Rails.logger.error(e.message + "\n" + e.backtrace)
+        raise e
+      end
     end
   end
 end
