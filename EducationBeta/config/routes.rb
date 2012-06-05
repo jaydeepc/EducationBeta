@@ -6,6 +6,7 @@ EducationBeta::Application.routes.draw do
   root :to => "welcome#show"
   match 'validate/:uuid' => 'users#confirm_registration'
   match 'resend/validation_email' => 'users#resend_validation'
+  match '/resend/email/popup' => 'users#show_popup'
   
   resources :users do 
     resources :questions do

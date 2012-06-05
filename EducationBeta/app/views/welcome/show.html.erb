@@ -99,16 +99,12 @@
                   </div>
                 <% end %>	
               </div>
-              <a href="/sign_up" class="registration">Join Now For Free Access</a>
+              <a href="/sign_up" class="registration">Join Now For Free Access</a><br />
+			  <%= link_to "Resend validation link","#",:class => "registration", :onclick=>"window.open('/resend/email/popup','resend','height=50px,width=485px,left=400px,top=350px,toolbar=no,titlebar=no');" %>
             </div>
           </div>
         </div>	
       </div>
-      <%= link_to "Resend validation link","#", :onclick=>"$('#validation_email_resend_form').fadeIn('slow')"%>
-      <%= form_tag "/resend/validation_email", :id=>"validation_email_resend_form", :style=>"display: none;", :remote=>true do %>
-        <%= text_field_tag "email" %>
-        <%= submit_tag "Resend" %>
-      <% end %>
     </div>	
 
   <div id="body">
