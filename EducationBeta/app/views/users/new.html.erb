@@ -130,9 +130,11 @@
 							<%= f.select :type, options_for_select(["Student","Tutor"], "Student"), {:style => "width: 260px;"}, {:class => "select", :onchange => "display_sub(this);"} %><br />
 						</div>	
 						<div id = "subjects" class="form_row" style="display: none;">
-							<%= f.label :subject %>
-              				<%= select_tag :subject, options_for_select(Subject.find(:all).collect(&:subject)),  :class => "select" %><br />
-            			</div>
+              <%= f.label :subject %>
+              <% Subject.find(:all).each do |subject| %>
+                <li><%= check_box :subject, :subject, {:id=>"subject_#{subject.subject}", :name=>"subject[#{subject.id}]"}%><%= label :subject, subject.subject%></li>
+              <% end %>
+          </div>
 						<p></p>
 						<div class="form_row"><%= f.submit :class => "submit" %></div>
 					<% end %>

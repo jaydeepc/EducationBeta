@@ -14,13 +14,14 @@ class UsersController < ApplicationController
 
     begin
       if @user.save
-        @user_subject =  TutorSubject.create(:tutor_id => @user.id, :subject_id => Subject.find_by_subject(params[:subject]).id) if @user.is_tutor?
+        create_tutor_subjects(params[:subject], @user) if @user.is_tutor?
         UserMailer.welcome_email(@user).deliver
         redirect_to root_url, :notice => "Successfully Signed up!"
       else
         render "new"
       end
-    rescue
+    rescue Exception => e
+      Rails.logger.error e.backtrace 
       redirect_to("/500.html")
     end  
   end
@@ -61,6 +62,15 @@ class UsersController < ApplicationController
       end
     rescue
       redirect_to("/500.html")
+    end
+  end
+
+  private
+
+  def create_tutor_subjects(subjects, user)
+    subject_ids = subjects.keys.select {|key| subjects[key] == "1"}
+    subject_ids.each do |subject_id|
+      user_subject = TutorSubject.create(:tutor_id => user.id, :subject_id => subject_id)
     end
   end
 end
