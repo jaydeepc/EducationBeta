@@ -54,16 +54,20 @@ class UsersController < ApplicationController
       respond_to do |format|
         if user.status == 'pending'
           UserMailer.welcome_email(user).deliver
-          format.html {redirect_to root_url, :notice => 'Validation email successfully sent.'}
+          format.html {render :text => '<script type="text/javascript"> var r=alert("Validation mail successfully sent!");window.close(); </script>'}
           format.js
         else
-          format.html {redirect_to root_url, :notice => 'User is not in right state to validate.'}
+          format.html {render :text => '<script type="text/javascript"> var r=alert("The validation mail can not be resent as the user is already validated");window.close(); </script>'}
         end
       end
     rescue
-      redirect_to("/500.html")
+      format.html {render :text => '<script type="text/javascript"> var r=alert("There is some problem while sending the mail!");window.close(); </script>'}
     end
   end
+
+  def show_popup
+    render "welcome/resend_email"
+  end   
 
   private
 

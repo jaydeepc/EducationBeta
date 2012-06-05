@@ -1,4 +1,3 @@
-
 body {
 	background: #363d47 url('images/background.jpg') top center no-repeat fixed;
 	font-family: Tahoma, Verdana, Arial, sans-serif;
@@ -654,6 +653,14 @@ div.information .hide_btn:hover {
 
 .landing_image{
     background: url('landing.jpg') repeat-x;
+}
+
+.validation_email_image{
+    background: url('validation.jpg') repeat-x;
+}
+
+.v2_image{
+    background: url('v2.png') repeat-x;
 }
 
 .reg_image{
