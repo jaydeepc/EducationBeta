@@ -24,7 +24,7 @@
 <%= javascript_include_tag "fancybox/jquery.fancybox-1.3.4.pack.js" %>
 <%= javascript_include_tag "fancybox/jquery.easing-1.4.pack.js" %>
 <%= javascript_include_tag "js.js" %>
-
+<% subjects = Subject.find(:all).collect(&:subject) %>
 <style>
 #user_nav{
 	display:none;
@@ -130,7 +130,7 @@
 						</div>	
 						<div id = "subjects" class="form_row" style="display: none;">
 							<%= f.label :subject %>
-              				<%= select_tag :subject, options_for_select(Subject.find(:all).collect(&:subject)),{ :multiple => true, :size =>3,:class => "multiselect", :style => "width: 260px;"} %><br />
+              				<%= select_tag :subject, options_for_select(subjects),{ :multiple => true, :size =>3,:class => "multiselect", :style => "width: 260px;"} %><br />
             			</div>
 						<p></p>
 						<div class="form_row"><%= f.submit :class => "submit" %></div>

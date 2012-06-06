@@ -72,10 +72,9 @@ class UsersController < ApplicationController
   private
 
   def create_tutor_subjects(subjects, user)
-    subject_ids = subjects.keys.select {|key| subjects[key] == "1"}
-    subject_ids.each do |subject_id|
+    subjects.each do |subject|
       begin
-        user_subject = TutorSubject.new(:tutor_id => user.id, :subject_id => subject_id)
+        user_subject = TutorSubject.new(:tutor_id => user.id, :subject_id => Subject.find_by_subject(subject).id)
         user_subject.save!
       rescue Exception => e
         Rails.logger.error(e.message + "\n" + e.backtrace)
