@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  tutor_id: 1
+  upload_type: MyString
+  file_size: 1
+
+two:
+  tutor_id: 1
+  upload_type: MyString
+  file_size: 1

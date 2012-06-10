@@ -1,0 +1,5 @@
+<%= form_for([current_user,@upload], :method => "POST", :html => {:multipart => "true"}) do |f| %>
+  <%= f.file_field :upload %>
+  <%= f.submit%>
+<% end %>
+
