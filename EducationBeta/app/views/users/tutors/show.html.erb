@@ -28,8 +28,8 @@
       </div><!-- Userbar End -->
       <div class="clear"></div>
       <div id="body">
-        <%= render :partial => "users/tutors/body/big_block", :locals => {:header => "Recent Questions", :text => "Graph will come here"}%>
-        <%= render :partial => "users/tutors/body/small_block", :locals => {:header => "My Notification", :report_image => "#{@graph}" }%>
+        <%= render :partial => "users/tutors/body/big_block", :locals => {:header => "Questions you have answered", :text => "Graph will come here"}%>
+        <%= render :partial => "users/tutors/body/small_block", :locals => {:header => "Questions Asked To You", :report_image => "#{@graph}" }%>
         <%= render :partial => "users/tutors/body/small_block", :locals => {:header => "Tests Available", :report_image => "Test Results will come here"}%>
         <%= render :partial => "users/tutors/body/small_block", :locals => {:header => "My Reputation", :report_image => "Report will come here"}%>
       </div><!-- Body Wrapper End -->

@@ -28,7 +28,7 @@ class UsersController < ApplicationController
 
   def show
     if current_user.is_tutor?
-      @graph = Report.new.reports current_user
+      @graph = Report.new.report_filter_questions_by_subject_for_an_user current_user
       render "users/tutors/show" 
     else
       render "users/students/show"
