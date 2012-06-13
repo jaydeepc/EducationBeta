@@ -3,6 +3,7 @@ EducationBeta::Application.routes.draw do
   get "log_out" => "sessions#destroy", :as => "log_out"
   get "log_in" => "sessions#new", :as => "log_in"
   get "sign_up" => "users#new", :as => "sign_up"
+  get "reports" => "users#reports", :as => "reports"
   root :to => "welcome#show"
   match 'validate/:uuid' => 'users#confirm_registration'
   match 'resend/validation_email' => 'users#resend_validation'

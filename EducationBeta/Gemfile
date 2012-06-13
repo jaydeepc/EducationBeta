@@ -30,6 +30,7 @@ gem 'execjs'
 
 gem 'therubyracer'
 gem 'uuidtools'
+gem 'gchartrb'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'

@@ -29,9 +29,9 @@
       <div class="clear"></div>
       <div id="body">
         <%= render :partial => "users/tutors/body/big_block", :locals => {:header => "Recent Questions", :text => "Graph will come here"}%>
-        <%= render :partial => "users/tutors/body/small_block", :locals => {:header => "My Notification", :text => "Notifications will come here"}%>
-        <%= render :partial => "users/tutors/body/small_block", :locals => {:header => "Tests Available", :text => "Test Results will come here"}%>
-        <%= render :partial => "users/tutors/body/small_block", :locals => {:header => "My Reputation", :text => "Report will come here"}%>
+        <%= render :partial => "users/tutors/body/small_block", :locals => {:header => "My Notification", :report_image => "#{@graph}" }%>
+        <%= render :partial => "users/tutors/body/small_block", :locals => {:header => "Tests Available", :report_image => "Test Results will come here"}%>
+        <%= render :partial => "users/tutors/body/small_block", :locals => {:header => "My Reputation", :report_image => "Report will come here"}%>
       </div><!-- Body Wrapper End -->
       <div>
         <%= link_to 'upload',new_user_upload_path(:user_id => current_user.id)%>

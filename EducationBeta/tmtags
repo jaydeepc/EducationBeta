@@ -1,0 +1,301 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+ActiveSupport	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/test/test_helper.rb	/^class ActiveSupport::TestCase$/;"	class	line:5
+AddIsTutorToUser	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/db/migrate/20120301070306_add_is_tutor_to_user.rb	/^class AddIsTutorToUser < ActiveRecord::Migration$/;"	class	line:1
+AddNameToUsers	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/db/migrate/20120319054004_add_name_to_users.rb	/^class AddNameToUsers < ActiveRecord::Migration$/;"	class	line:1
+AddStatusToUser	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/db/migrate/20120509172017_add_status_to_user.rb	/^class AddStatusToUser < ActiveRecord::Migration$/;"	class	line:1
+AddTitleToQuestion	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/db/migrate/20120412071145_add_title_to_question.rb	/^class AddTitleToQuestion < ActiveRecord::Migration$/;"	class	line:1
+AddUserTypeToUsers	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/db/migrate/20120410084639_add_user_type_to_users.rb	/^class AddUserTypeToUsers < ActiveRecord::Migration$/;"	class	line:1
+AddValidationUuidToUser	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/db/migrate/20120512044715_add_validation_uuid_to_user.rb	/^class AddValidationUuidToUser < ActiveRecord::Migration$/;"	class	line:1
+Answer	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/models/answer.rb	/^class Answer < ActiveRecord::Base$/;"	class	line:1
+AnswersController	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/answers_controller.rb	/^class AnswersController < ApplicationController$/;"	class	line:1
+AnswersControllerTest	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/test/functional/answers_controller_test.rb	/^class AnswersControllerTest < ActionController::TestCase$/;"	class	line:3
+AnswersHelper	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/helpers/answers_helper.rb	/^module AnswersHelper$/;"	mixin	line:1
+AnswersHelperTest	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/test/unit/helpers/answers_helper_test.rb	/^class AnswersHelperTest < ActionView::TestCase$/;"	class	line:3
+Application	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/config/application.rb	/^  class Application < Rails::Application$/;"	class	line:13
+ApplicationController	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	class	line:1
+ApplicationHelper	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	mixin	line:1
+BrowsingTest	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/test/performance/browsing_test.rb	/^class BrowsingTest < ActionDispatch::PerformanceTest$/;"	class	line:4
+ChangeUserTypeToTypeInUser	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/db/migrate/20120411091142_change_user_type_to_type_in_user.rb	/^class ChangeUserTypeToTypeInUser < ActiveRecord::Migration$/;"	class	line:1
+CreateAnswer	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/db/migrate/20120418043431_create_answer.rb	/^class CreateAnswer < ActiveRecord::Migration$/;"	class	line:1
+CreateQuestions	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/db/migrate/20120312102949_create_questions.rb	/^class CreateQuestions < ActiveRecord::Migration$/;"	class	line:1
+CreateSubjects	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/db/migrate/20120312103652_create_subjects.rb	/^class CreateSubjects < ActiveRecord::Migration$/;"	class	line:1
+CreateTutorSubject	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/db/migrate/20120527063909_create_tutor_subject.rb	/^class CreateTutorSubject < ActiveRecord::Migration$/;"	class	line:1
+CreateUsers	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/db/migrate/20120229074622_create_users.rb	/^class CreateUsers < ActiveRecord::Migration$/;"	class	line:1
+DashedHorizontalLine	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.canvasOverlay.js	/^    function DashedHorizontalLine(options) {$/;"	function	line:220
+DashedVerticalLine	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.canvasOverlay.js	/^    function DashedVerticalLine(options) {$/;"	function	line:277
+DragCanvas	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.dragable.js	/^    function DragCanvas() {$/;"	function	line:56
+EducationBeta	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/config/application.rb	/^module EducationBeta$/;"	mixin	line:12
+HorizontalLine	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.canvasOverlay.js	/^    function HorizontalLine(options) {$/;"	function	line:186
+Line	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.canvasOverlay.js	/^    function Line(options) {$/;"	function	line:160
+LineBase	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.canvasOverlay.js	/^    function LineBase() {$/;"	function	line:85
+Question	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/models/question.rb	/^class Question < ActiveRecord::Base$/;"	class	line:1
+QuestionsController	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/questions_controller.rb	/^class QuestionsController < ApplicationController$/;"	class	line:1
+QuestionsControllerTest	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/test/functional/questions_controller_test.rb	/^class QuestionsControllerTest < ActionController::TestCase$/;"	class	line:3
+QuestionsHelper	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/helpers/questions_helper.rb	/^module QuestionsHelper$/;"	mixin	line:1
+QuestionsHelperTest	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/test/unit/helpers/questions_helper_test.rb	/^class QuestionsHelperTest < ActionView::TestCase$/;"	class	line:3
+RemoveIsTutorFromUsers	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/db/migrate/20120410085640_remove_is_tutor_from_users.rb	/^class RemoveIsTutorFromUsers < ActiveRecord::Migration$/;"	class	line:1
+SessionsController	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/sessions_controller.rb	/^class SessionsController < ApplicationController$/;"	class	line:1
+SessionsControllerTest	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/test/functional/sessions_controller_test.rb	/^class SessionsControllerTest < ActionController::TestCase$/;"	class	line:3
+SessionsHelper	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/helpers/sessions_helper.rb	/^module SessionsHelper$/;"	mixin	line:1
+SessionsHelperTest	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/test/unit/helpers/sessions_helper_test.rb	/^class SessionsHelperTest < ActionView::TestCase$/;"	class	line:3
+Student	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/models/student.rb	/^class Student < User$/;"	class	line:1
+StudentsController	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/students_controller.rb	/^class StudentsController < ApplicationController$/;"	class	line:1
+StudentsControllerTest	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/test/functional/students_controller_test.rb	/^class StudentsControllerTest < ActionController::TestCase$/;"	class	line:3
+StudentsHelper	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/helpers/students_helper.rb	/^module StudentsHelper$/;"	mixin	line:1
+StudentsHelperTest	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/test/unit/helpers/students_helper_test.rb	/^class StudentsHelperTest < ActionView::TestCase$/;"	class	line:3
+Subject	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/models/subject.rb	/^class Subject < ActiveRecord::Base$/;"	class	line:1
+Tipsy	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/tooltip/jquery.tipsy.js	/^    function Tipsy(element, options) {$/;"	function	line:12
+Tutor	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/models/tutor.rb	/^class Tutor < User$/;"	class	line:1
+TutorSubject	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/models/tutor_subject.rb	/^class TutorSubject < ActiveRecord::Base$/;"	class	line:1
+TutorsController	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/tutors_controller.rb	/^class TutorsController < ApplicationController$/;"	class	line:1
+TutorsControllerTest	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/test/functional/tutors_controller_test.rb	/^class TutorsControllerTest < ActionController::TestCase$/;"	class	line:3
+TutorsHelper	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/helpers/tutors_helper.rb	/^module TutorsHelper$/;"	mixin	line:1
+User	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/models/user.rb	/^class User < ActiveRecord::Base$/;"	class	line:1
+UserMailer	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/mailers/user_mailer.rb	/^class UserMailer < ActionMailer::Base$/;"	class	line:1
+UserMailerTest	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/test/functional/user_mailer_test.rb	/^class UserMailerTest < ActionMailer::TestCase$/;"	class	line:3
+UserTest	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/test/unit/user_test.rb	/^class UserTest < ActiveSupport::TestCase$/;"	class	line:3
+UsersController	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/users_controller.rb	/^class UsersController < ApplicationController$/;"	class	line:1
+UsersControllerTest	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/test/functional/users_controller_test.rb	/^class UsersControllerTest < ActionController::TestCase$/;"	class	line:3
+UsersHelper	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/helpers/users_helper.rb	/^module UsersHelper$/;"	mixin	line:1
+UsersHelperTest	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/test/unit/helpers/users_helper_test.rb	/^class UsersHelperTest < ActionView::TestCase$/;"	class	line:3
+VerticalLine	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.canvasOverlay.js	/^    function VerticalLine(options) {$/;"	function	line:251
+WelcomeController	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/welcome_controller.rb	/^class WelcomeController < ApplicationController$/;"	class	line:1
+WelcomeControllerTest	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/test/functional/welcome_controller_test.rb	/^class WelcomeControllerTest < ActionController::TestCase$/;"	class	line:3
+WelcomeHelper	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/helpers/welcome_helper.rb	/^module WelcomeHelper$/;"	mixin	line:1
+WelcomeHelperTest	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/test/unit/helpers/welcome_helper_test.rb	/^class WelcomeHelperTest < ActionView::TestCase$/;"	class	line:3
+_cleanup	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/fancybox/jquery.fancybox-1.3.4.js	/^		function _cleanup() {$/;"	function	line:954
+about	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/public/index_moved.html	/^      function about() {$/;"	function	line:175
+addTrendlineLegend	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.trendline.js	/^    function addTrendlineLegend(series) {$/;"	function	line:94
+addrow	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.cursor.js	/^        function addrow(label, color, pad, idx) {$/;"	function	line:1070
+authenticate	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/models/user.rb	/^  def self.authenticate(email, password)$/;"	singleton method	line:15
+barPreInit	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.barRenderer.js	/^    function barPreInit(target, data, seriesDefaults, options) {$/;"	function	line:175
+bestDateInterval	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.dateAxisRenderer.js	/^    function bestDateInterval(min, max, titarget) {$/;"	function	line:130
+buttonClick	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/editor/jquery.cleditor.js	/^  function buttonClick(e) {$/;"	function	line:352
+calcRPrime	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.pieRenderer.js	/^    function calcRPrime(ang1, ang2, sliceMargin, fill, lineWidth) {$/;"	function	line:258
+calcRadiusAdjustment	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.pieRenderer.js	/^    function calcRadiusAdjustment(ang) {$/;"	function	line:254
+can_update	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/questions_controller.rb	/^  def can_update$/;"	method	line:68
+change	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/db/migrate/20120229074622_create_users.rb	/^  def change$/;"	method	line:2
+checksum	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/editor/jquery.cleditor.js	/^  function checksum(text)$/;"	function	line:567
+clear	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/editor/jquery.cleditor.js	/^  function clear(editor) {$/;"	function	line:578
+clickHandler	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/jquery-ui-1.8.9.custom.min.js	/^function clickHandler(event){var options=$.data(this,"accordion").options;if(options.disabled){return false;}$/;"	function	line:165
+computeHighlightColors	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.barRenderer.js	/^    function computeHighlightColors (colors) {$/;"	function	line:272
+confirm_registration	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/users_controller.rb	/^  def confirm_registration$/;"	method	line:37
+create	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/answers_controller.rb	/^  def create$/;"	method	line:12
+create	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/questions_controller.rb	/^  def create$/;"	method	line:14
+create	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/sessions_controller.rb	/^  def create$/;"	method	line:10
+create	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/users_controller.rb	/^  def create$/;"	method	line:10
+createPopup	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/editor/jquery.cleditor.js	/^  function createPopup(popupName, options, popupTypeClass, popupContent, popupHover) {$/;"	function	line:584
+create_tutor_subjects	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/users_controller.rb	/^  def create_tutor_subjects(subjects, user)$/;"	method	line:85
+css_browser_selector	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/css_browser_selector.js	/^function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){return ua.indexOf(t)>-1},g='gecko',w='webkit',s='safari',o='opera',m='mobile',h=document.documentElement,b=[(!(\/opera|webtv\/i.test(ua))&&\/msie\\s(\\d)\/.test(ua))?('ie ie'+RegExp.$1):is('firefox\/2')?g+' ff2':is('firefox\/3.5')?g+' ff3 ff3_5':is('firefox\/3.6')?g+' ff3 ff3_6':is('firefox\/3')?g+' ff3':is('gecko\/')?g:is('opera')?o+(\/version\\\/(\\d+)\/.test(ua)?' '+o+RegExp.$1:(\/opera(\\s|\\\/)(\\d+)\/.test(ua)?' '+o+RegExp.$2:'')):is('konqueror')?'konqueror':is('blackberry')?m+' blackberry':is('android')?m+' android':is('chrome')?w+' chrome':is('iron')?w+' iron':is('applewebkit\/')?w+' '+s+(\/version\\\/(\\d+)\/.test(ua)?' '+s+RegExp.$1:''):is('mozilla\/')?g:'',is('j2me')?m+' j2me':is('iphone')?m+' iphone':is('ipod')?m+' ipod':is('ipad')?m+' ipad':is('mac')?'mac':is('darwin')?'mac':is('webtv')?'webtv':is('win')?'win'+(is('windows nt 6.0')?' vista':''):is('freebsd')?'freebsd':(is('x11')||is('linux'))?'linux':'','js']; c = b.join(' '); h.className += ' '+c; return c;}; css_browser_selector(navigator.userAgent);$/;"	function	line:8
+current_user	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/application_controller.rb	/^  def current_user$/;"	method	line:7
+current_user	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/students_controller.rb	/^  def current_user$/;"	method	line:10
+delegate	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/jquery.validate.js	/^			function delegate(event) {$/;"	function	line:313
+destroy	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/sessions_controller.rb	/^  def destroy$/;"	method	line:22
+disable	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/editor/jquery.cleditor.js	/^  function disable(editor, disabled) {$/;"	function	line:671
+doDraw	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.donutRenderer.js	/^        function doDraw () {$/;"	function	line:289
+doDraw	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.funnelRenderer.js	/^        function doDraw () {$/;"	function	line:271
+doDraw	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.pieRenderer.js	/^        function doDraw (rad) {$/;"	function	line:317
+down	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/db/migrate/20120301070306_add_is_tutor_to_user.rb	/^  def self.down$/;"	singleton method	line:6
+down	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/db/migrate/20120312102949_create_questions.rb	/^  def self.down$/;"	singleton method	line:13
+down	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/db/migrate/20120312103652_create_subjects.rb	/^  def self.down$/;"	singleton method	line:9
+down	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/db/migrate/20120319054004_add_name_to_users.rb	/^  def self.down$/;"	singleton method	line:6
+down	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/db/migrate/20120410084639_add_user_type_to_users.rb	/^  def self.down$/;"	singleton method	line:6
+down	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/db/migrate/20120410085640_remove_is_tutor_from_users.rb	/^  def down$/;"	method	line:6
+down	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/db/migrate/20120411091142_change_user_type_to_type_in_user.rb	/^  def down$/;"	method	line:6
+down	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/db/migrate/20120412071145_add_title_to_question.rb	/^  def self.down$/;"	singleton method	line:6
+down	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/db/migrate/20120418043431_create_answer.rb	/^  def self.down$/;"	singleton method	line:10
+down	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/db/migrate/20120509172017_add_status_to_user.rb	/^  def self.down$/;"	singleton method	line:6
+down	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/db/migrate/20120512044715_add_validation_uuid_to_user.rb	/^  def self.down$/;"	singleton method	line:6
+down	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/db/migrate/20120527063909_create_tutor_subject.rb	/^  def down$/;"	method	line:10
+draw	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.highlighter.js	/^    function draw(plot, neighbor) {$/;"	function	line:212
+drawLine	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.pyramidGridRenderer.js	/^        function drawLine(bx, by, ex, ey, opts) {$/;"	function	line:368
+drawTrendline	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.trendline.js	/^    function drawTrendline(sctx, options) {$/;"	function	line:116
+drawZoomBox	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.cursor.js	/^    function drawZoomBox() {$/;"	function	line:987
+encrypt_password	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/models/user.rb	/^  def encrypt_password$/;"	method	line:29
+enter	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/tooltip/jquery.tipsy.js	/^        function enter() {$/;"	function	line:145
+execCommand	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/editor/jquery.cleditor.js	/^  function execCommand(editor, command, value, useCSS, button) {$/;"	function	line:700
+expRegression	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.trendline.js	/^    function expRegression(X,Y) {$/;"	function	line:180
+f	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.json2.js	/^                    function f(n) {$/;"	function	line:56
+f	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.json2.js	/^    function f(n) {$/;"	function	line:164
+findCeil	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.logAxisRenderer.js	/^            function findCeil (val) {$/;"	function	line:169
+findFloor	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.logAxisRenderer.js	/^            function findFloor(val) {$/;"	function	line:174
+find_all_tutors_by_subject	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/models/tutor_subject.rb	/^  def self.find_all_tutors_by_subject(subject)$/;"	singleton method	line:7
+findleft	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.funnelRenderer.js	/^        function findleft (l) {$/;"	function	line:395
+findright	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.funnelRenderer.js	/^        function findright (l) {$/;"	function	line:403
+fitData	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.trendline.js	/^    function fitData(data, typ) {$/;"	function	line:190
+focus	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/editor/jquery.cleditor.js	/^  function focus(editor) {$/;"	function	line:738
+get	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/tooltip/jquery.tipsy.js	/^        function get(ele) {$/;"	function	line:136
+getColor	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/jquery-ui-1.8.9.custom.min.js	/^function getColor(elem,attr){var color;do{color=jQuery.curCSS(elem,attr);if(color!=''&&color!='transparent'||jQuery.nodeName(elem,"body"))$/;"	function	line:470
+getEventPosition	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.cursor.js	/^    function getEventPosition(ev) {$/;"	function	line:822
+getIntersectingPoints	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.cursor.js	/^    function getIntersectingPoints(plot, x, y) {$/;"	function	line:581
+getRange	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/editor/jquery.cleditor.js	/^  function getRange(editor) {$/;"	function	line:747
+getSelection	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/editor/jquery.cleditor.js	/^  function getSelection(editor) {$/;"	function	line:753
+getWidth	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/jquery.corner.js	/^function getWidth(fx, i, width) {$/;"	function	line:63
+getnmt	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.meterGaugeRenderer.js	/^    function getnmt(pos, interval, fact) {$/;"	function	line:303
+gpc	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/jquery.corner.js	/^function gpc(node) {$/;"	function	line:46
+handle	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/jquery.validate.js	/^				function handle() {$/;"	function	line:60
+handleClick	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.barRenderer.js	/^    function handleClick(ev, gridpos, datapos, neighbor, plot) {$/;"	function	line:722
+handleClick	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.bubbleRenderer.js	/^    function handleClick(ev, gridpos, datapos, neighbor, plot) {$/;"	function	line:670
+handleClick	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.cursor.js	/^    function handleClick (ev, gridpos, datapos, neighbor, plot) {$/;"	function	line:713
+handleClick	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.donutRenderer.js	/^    function handleClick(ev, gridpos, datapos, neighbor, plot) {$/;"	function	line:739
+handleClick	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.funnelRenderer.js	/^    function handleClick(ev, gridpos, datapos, neighbor, plot) {$/;"	function	line:877
+handleClick	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.pieRenderer.js	/^    function handleClick(ev, gridpos, datapos, neighbor, plot) {$/;"	function	line:837
+handleDblClick	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.cursor.js	/^    function handleDblClick (ev, gridpos, datapos, neighbor, plot) {$/;"	function	line:731
+handleDown	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.dragable.js	/^    function handleDown(ev, gridpos, datapos, neighbor, plot) {$/;"	function	line:177
+handleMouseDown	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.barRenderer.js	/^    function handleMouseDown(ev, gridpos, datapos, neighbor, plot) {$/;"	function	line:699
+handleMouseDown	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.bubbleRenderer.js	/^    function handleMouseDown(ev, gridpos, datapos, neighbor, plot) {$/;"	function	line:645
+handleMouseDown	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.cursor.js	/^    function handleMouseDown(ev, gridpos, datapos, neighbor, plot) {$/;"	function	line:887
+handleMouseDown	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.donutRenderer.js	/^    function handleMouseDown(ev, gridpos, datapos, neighbor, plot) {$/;"	function	line:716
+handleMouseDown	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.funnelRenderer.js	/^    function handleMouseDown(ev, gridpos, datapos, neighbor, plot) {$/;"	function	line:854
+handleMouseDown	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.pieRenderer.js	/^    function handleMouseDown(ev, gridpos, datapos, neighbor, plot) {$/;"	function	line:814
+handleMouseEnter	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.cursor.js	/^    function handleMouseEnter(ev, gridpos, datapos, neighbor, plot) {$/;"	function	line:784
+handleMouseLeave	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.cursor.js	/^    function handleMouseLeave(ev, gridpos, datapos, neighbor, plot) {$/;"	function	line:749
+handleMouseMove	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.cursor.js	/^    function handleMouseMove(ev, gridpos, datapos, neighbor, plot) {$/;"	function	line:807
+handleMouseUp	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.barRenderer.js	/^    function handleMouseUp(ev, gridpos, datapos, neighbor, plot) {$/;"	function	line:715
+handleMouseUp	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.bubbleRenderer.js	/^    function handleMouseUp(ev, gridpos, datapos, neighbor, plot) {$/;"	function	line:663
+handleMouseUp	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.cursor.js	/^    function handleMouseUp(ev) {$/;"	function	line:927
+handleMouseUp	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.donutRenderer.js	/^    function handleMouseUp(ev, gridpos, datapos, neighbor, plot) {$/;"	function	line:732
+handleMouseUp	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.funnelRenderer.js	/^    function handleMouseUp(ev, gridpos, datapos, neighbor, plot) {$/;"	function	line:870
+handleMouseUp	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.pieRenderer.js	/^    function handleMouseUp(ev, gridpos, datapos, neighbor, plot) {$/;"	function	line:830
+handleMove	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.barRenderer.js	/^    function handleMove(ev, gridpos, datapos, neighbor, plot) {$/;"	function	line:679
+handleMove	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.bubbleRenderer.js	/^    function handleMove(ev, gridpos, datapos, neighbor, plot) {$/;"	function	line:623
+handleMove	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.canvasOverlay.js	/^    function handleMove(ev, gridpos, datapos, neighbor, plot) {$/;"	function	line:742
+handleMove	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.donutRenderer.js	/^    function handleMove(ev, gridpos, datapos, neighbor, plot) {$/;"	function	line:696
+handleMove	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.dragable.js	/^    function handleMove(ev, gridpos, datapos, neighbor, plot) {$/;"	function	line:127
+handleMove	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.funnelRenderer.js	/^    function handleMove(ev, gridpos, datapos, neighbor, plot) {$/;"	function	line:834
+handleMove	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.highlighter.js	/^    function handleMove(ev, gridpos, datapos, neighbor, plot) {$/;"	function	line:398
+handleMove	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.pieRenderer.js	/^    function handleMove(ev, gridpos, datapos, neighbor, plot) {$/;"	function	line:794
+handleMove	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.pyramidRenderer.js	/^    function handleMove(ev, gridpos, datapos, neighbor, plot) {$/;"	function	line:466
+handleRightClick	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.barRenderer.js	/^    function handleRightClick(ev, gridpos, datapos, neighbor, plot) {$/;"	function	line:732
+handleRightClick	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.bubbleRenderer.js	/^    function handleRightClick(ev, gridpos, datapos, neighbor, plot) {$/;"	function	line:682
+handleRightClick	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.donutRenderer.js	/^    function handleRightClick(ev, gridpos, datapos, neighbor, plot) {$/;"	function	line:749
+handleRightClick	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.funnelRenderer.js	/^    function handleRightClick(ev, gridpos, datapos, neighbor, plot) {$/;"	function	line:887
+handleRightClick	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.pieRenderer.js	/^    function handleRightClick(ev, gridpos, datapos, neighbor, plot) {$/;"	function	line:847
+handleStrings	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.ciParser.js	/^         function handleStrings(key, value) {$/;"	function	line:82
+handleUp	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.dragable.js	/^    function handleUp(ev, gridpos, datapos, neighbor, plot) {$/;"	function	line:200
+handleZoomMove	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.cursor.js	/^    function handleZoomMove(ev) {$/;"	function	line:843
+handler	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/jquery.validate.js	/^			function handler(e) {$/;"	function	line:1169
+hex	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/editor/jquery.cleditor.js	/^  function hex(s) {$/;"	function	line:762
+hex2	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/jquery.corner.js	/^function hex2(s) {$/;"	function	line:42
+hidePopups	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/editor/jquery.cleditor.js	/^  function hidePopups() {$/;"	function	line:774
+highlight	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.barRenderer.js	/^    function highlight (plot, sidx, pidx, points) {$/;"	function	line:656
+highlight	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.bubbleRenderer.js	/^    function highlight (plot, sidx, pidx) {$/;"	function	line:580
+highlight	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.donutRenderer.js	/^    function highlight (plot, sidx, pidx) {$/;"	function	line:677
+highlight	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.funnelRenderer.js	/^    function highlight (plot, sidx, pidx) {$/;"	function	line:815
+highlight	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.pieRenderer.js	/^    function highlight (plot, sidx, pidx) {$/;"	function	line:775
+highlight	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.pyramidRenderer.js	/^    function highlight (plot, sidx, pidx, points) {$/;"	function	line:443
+hoverEnter	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/editor/jquery.cleditor.js	/^  function hoverEnter(e) {$/;"	function	line:489
+hoverLeave	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/editor/jquery.cleditor.js	/^  function hoverLeave(e) {$/;"	function	line:495
+imageUrl	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/editor/jquery.cleditor.js	/^  function imageUrl(filename) {$/;"	function	line:791
+imagesPath	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/editor/jquery.cleditor.js	/^  function imagesPath() {$/;"	function	line:784
+index	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/questions_controller.rb	/^  def index$/;"	method	line:40
+initDragPoint	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.dragable.js	/^    function initDragPoint(plot, neighbor) {$/;"	function	line:103
+isNearLine	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.canvasOverlay.js	/^    function isNearLine(point, lstart, lstop, width) {$/;"	function	line:723
+is_allowed	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/answers_controller.rb	/^  def is_allowed$/;"	method	line:51
+is_allowed	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/questions_controller.rb	/^  def is_allowed$/;"	method	line:59
+is_registered	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/sessions_controller.rb	/^  def is_registered$/;"	method	line:28
+is_tutor?	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/models/user.rb	/^  def is_tutor?$/;"	method	line:24
+kc	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/calendar/fullcalendar.min.js	/^function kc(a){return(parseFloat(m.curCSS(a[0],"borderTopWidth",true))||0)+(parseFloat(m.curCSS(a[0],"borderBottomWidth",true))||0)}function Za(a,b){b=typeof b=="number"?b+"px":b;a.each(function(e,d){d.style.cssText+=";min-height:"+b+";_height:"+b})}function xb(){}function Gb(a,b){return a-b}function Hb(a){return Math.max.apply(Math,a)}function Pa(a){return(a<10?"0":"")+a}function jb(a,b){if(a[b]!==oa)return a[b];b=b.split(\/(?=[A-Z])\/);for(var e=b.length-1,d;e>=0;e--){d=a[b[e].toLowerCase()];if(d!==$/;"	function	line:38
+leave	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/tooltip/jquery.tipsy.js	/^        function leave() {$/;"	function	line:156
+linearRegression	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.trendline.js	/^    function linearRegression(X,Y) {$/;"	function	line:174
+maybeCall	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/tooltip/jquery.tipsy.js	/^    function maybeCall(thing, ctx) {$/;"	function	line:8
+model_name	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/models/student.rb	/^  def self.model_name$/;"	singleton method	line:3
+model_name	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/models/tutor.rb	/^  def self.model_name$/;"	singleton method	line:3
+moveLine	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.cursor.js	/^    function moveLine(gridpos, plot) {$/;"	function	line:535
+moveTooltip	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.cursor.js	/^    function moveTooltip(gridpos, plot) {$/;"	function	line:609
+new	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/answers_controller.rb	/^  def new$/;"	method	line:7
+new	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/questions_controller.rb	/^  def new$/;"	method	line:9
+new	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/sessions_controller.rb	/^  def new$/;"	method	line:7
+new	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/users_controller.rb	/^  def new$/;"	method	line:6
+parseTrendLineOptions	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.trendline.js	/^    function parseTrendLineOptions (target, data, seriesDefaults, options, plot) {$/;"	function	line:106
+pie_chart_for_solutions	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/users_controller.rb	/^  def pie_chart_for_solutions$/;"	method	line:51
+plotReset	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.cursor.js	/^        function plotReset(ev, plot, cursor) {$/;"	function	line:311
+plotZoom	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.cursor.js	/^        function plotZoom(ev, gridpos, datapos, plot, cursor) {$/;"	function	line:307
+popupClick	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/editor/jquery.cleditor.js	/^  function popupClick(e) {$/;"	function	line:500
+positionTooltip	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.cursor.js	/^    function positionTooltip(plot) { $/;"	function	line:656
+postInit	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.barRenderer.js	/^    function postInit(target, data, options) {$/;"	function	line:626
+postInit	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.donutRenderer.js	/^    function postInit(target, data, options) {$/;"	function	line:645
+postInit	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.funnelRenderer.js	/^    function postInit(target, data, options) {$/;"	function	line:794
+postInit	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.pieRenderer.js	/^    function postInit(target, data, options) {$/;"	function	line:756
+postParseOptions	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.donutRenderer.js	/^    function postParseOptions(options) {$/;"	function	line:670
+postParseOptions	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.funnelRenderer.js	/^    function postParseOptions(options) {$/;"	function	line:808
+postParseOptions	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.meterGaugeRenderer.js	/^    function postParseOptions(options) {$/;"	function	line:1013
+postParseOptions	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.pieRenderer.js	/^    function postParseOptions(options) {$/;"	function	line:768
+postPlotDraw	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.barRenderer.js	/^    function postPlotDraw() {$/;"	function	line:640
+postPlotDraw	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.bubbleRenderer.js	/^    function postPlotDraw() {$/;"	function	line:701
+postPlotDraw	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.donutRenderer.js	/^    function postPlotDraw() {$/;"	function	line:766
+postPlotDraw	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.funnelRenderer.js	/^    function postPlotDraw() {$/;"	function	line:904
+postPlotDraw	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.pieRenderer.js	/^    function postPlotDraw() {$/;"	function	line:864
+postPlotDraw	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.pyramidRenderer.js	/^    function postPlotDraw() {$/;"	function	line:427
+preInit	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.BezierCurveRenderer.js	/^    function preInit(target, data, options) {$/;"	function	line:288
+preInit	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.bubbleRenderer.js	/^    function preInit(target, data, options) {$/;"	function	line:727
+preInit	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.donutRenderer.js	/^    function preInit(target, data, options) {$/;"	function	line:618
+preInit	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.funnelRenderer.js	/^    function preInit(target, data, options) {$/;"	function	line:767
+preInit	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.mekkoRenderer.js	/^    function preInit(target, data, options) {$/;"	function	line:410
+preInit	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.meterGaugeRenderer.js	/^    function preInit(target, data, options) {$/;"	function	line:980
+preInit	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.pieRenderer.js	/^    function preInit(target, data, options) {$/;"	function	line:730
+preInit	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.pyramidRenderer.js	/^    function preInit(target, data, options) {$/;"	function	line:398
+quote	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.json2.js	/^    function quote(string) {$/;"	function	line:205
+rb	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/calendar/fullcalendar.min.js	/^function rb(a,b){a.each(function(e,d){d.className=d.className.replace(\/^fc-\\w*\/,"fc-"+lc[b.getDay()])})}function Jb(a,b){var e=a.source||{},d=a.color,f=e.color,g=b("eventColor"),l=a.backgroundColor||d||e.backgroundColor||f||b("eventBackgroundColor")||g;d=a.borderColor||d||e.borderColor||f||b("eventBorderColor")||g;a=a.textColor||e.textColor||b("eventTextColor");b=[];l&&b.push("background-color:"+l);d&&b.push("border-color:"+d);a&&b.push("color:"+a);return b.join(";")}function $a(a,b,e){if(m.isFunction(a))a=$/;"	function	line:40
+refresh	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/editor/jquery.cleditor.js	/^  function refresh(editor) {$/;"	function	line:796
+refreshButtons	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/editor/jquery.cleditor.js	/^  function refreshButtons(editor) {$/;"	function	line:917
+regression	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.trendline.js	/^    function regression(x, y, typ)  {$/;"	function	line:130
+require_no_user	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/application_controller.rb	/^  def require_no_user$/;"	method	line:31
+require_no_user	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/students_controller.rb	/^  def require_no_user$/;"	method	line:22
+require_user	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/application_controller.rb	/^  def require_user$/;"	method	line:11
+require_user	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/students_controller.rb	/^  def require_user$/;"	method	line:14
+resend_validation	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/users_controller.rb	/^  def resend_validation$/;"	method	line:62
+restoreRange	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/editor/jquery.cleditor.js	/^  function restoreRange(editor) {$/;"	function	line:983
+select	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/editor/jquery.cleditor.js	/^  function select(editor) {$/;"	function	line:989
+selectedHTML	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/editor/jquery.cleditor.js	/^  function selectedHTML(editor) {$/;"	function	line:997
+selectedText	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/editor/jquery.cleditor.js	/^  function selectedText(editor) {$/;"	function	line:1010
+show	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/answers_controller.rb	/^  def show$/;"	method	line:26
+show	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/questions_controller.rb	/^  def show$/;"	method	line:30
+show	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/students_controller.rb	/^  def show$/;"	method	line:29
+show	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/tutors_controller.rb	/^  def show$/;"	method	line:5
+show	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/users_controller.rb	/^  def show$/;"	method	line:29
+show	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/welcome_controller.rb	/^  def show$/;"	method	line:3
+showMessage	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/editor/jquery.cleditor.js	/^  function showMessage(editor, message, button) {$/;"	function	line:1017
+showPopup	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/editor/jquery.cleditor.js	/^  function showPopup(editor, popup, button) {$/;"	function	line:1024
+showTab	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/jquery-ui-1.8.9.custom.min.js	/^function showTab(clicked,$show,$hide){if(showFx===baseFx)$/;"	function	line:239
+showTooltip	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.canvasOverlay.js	/^    function showTooltip(plot, obj, gridpos, datapos) {$/;"	function	line:663
+showTooltip	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.highlighter.js	/^    function showTooltip(plot, series, neighbor) {$/;"	function	line:228
+show_popup	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/users_controller.rb	/^  def show_popup$/;"	method	line:79
+sourceMode	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/editor/jquery.cleditor.js	/^  function sourceMode(editor) {$/;"	function	line:1061
+stop	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/jquery-ui-1.8.9.custom.min.js	/^function stop(e){if(!e||e.clientX){clearInterval(self.rotation);}}$/;"	function	line:267
+str	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.json2.js	/^    function str(key, holder) {$/;"	function	line:223
+switchTab	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/jquery-ui-1.8.9.custom.min.js	/^function switchTab(clicked,$li,$hide,$show){$li.addClass(o.selectedClass).siblings().removeClass(o.selectedClass);hideTab(clicked,$hide,$show);}$/;"	function	line:242
+sz	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/jquery.corner.js	/^function sz(el, p) { $/;"	function	line:39
+test_homepage	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/test/performance/browsing_test.rb	/^  def test_homepage$/;"	method	line:9
+toggle	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/jquery-ui-1.8.9.custom.min.js	/^function toggle(toShow,toHide,data,clickedActive,down){var options=$.data(this,"accordion").options;options.toShow=toShow;options.toHide=toHide;options.data=data;var complete=scopeCallback(completed,this);options.running=toHide.size()===0?toShow.size():toHide.size();if(options.animated){if(!options.alwaysOpen&&clickedActive){$.ui.accordion.animations[options.animated]({toShow:jQuery([]),toHide:toHide,complete:complete,down:down,autoHeight:options.autoHeight});}else{$.ui.accordion.animations[options.animated]({toShow:toShow,toHide:toHide,complete:complete,down:down,autoHeight:options.autoHeight});}}else{if(!options.alwaysOpen&&clickedActive){toShow.toggle();}else{toHide.hide();toShow.show();}$/;"	function	line:163
+ua	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/calendar/fullcalendar.min.js	/^function ua(w){return{row:Math.floor(Ca(w,p.visStart)\/7),col:ka(w.getDay())}}function pa(w){return U(w.row,w.col)}function U(w,I){return ba(N(p.visStart),w*7+I*D+Z)}function ca(w){return U(Math.floor(w\/F),w%F)}function ka(w){return(w-Math.max(ja,ia)+F)%F*D+Z}function qa(w){return P.eq(w)}function G(){return{left:0,right:W}}var p=this;p.renderBasic=d;p.setHeight=j;p.setWidth=t;p.renderDayOverlay=Q;p.defaultSelectionEnd=u;p.renderSelection=fa;p.clearSelection=na;p.reportDayClick=ga;p.dragStart=ra;p.dragStop=$/;"	function	line:49
+unhighlight	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.barRenderer.js	/^    function unhighlight (plot) {$/;"	function	line:667
+unhighlight	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.bubbleRenderer.js	/^    function unhighlight (plot) {$/;"	function	line:610
+unhighlight	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.donutRenderer.js	/^    function unhighlight (plot) {$/;"	function	line:686
+unhighlight	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.funnelRenderer.js	/^    function unhighlight (plot) {$/;"	function	line:824
+unhighlight	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.pieRenderer.js	/^    function unhighlight (plot) {$/;"	function	line:784
+unhighlight	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.pyramidRenderer.js	/^    function unhighlight (plot) {$/;"	function	line:454
+up	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/db/migrate/20120301070306_add_is_tutor_to_user.rb	/^  def self.up$/;"	singleton method	line:2
+up	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/db/migrate/20120312102949_create_questions.rb	/^  def self.up$/;"	singleton method	line:2
+up	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/db/migrate/20120312103652_create_subjects.rb	/^  def self.up$/;"	singleton method	line:2
+up	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/db/migrate/20120319054004_add_name_to_users.rb	/^  def self.up$/;"	singleton method	line:2
+up	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/db/migrate/20120410084639_add_user_type_to_users.rb	/^  def self.up$/;"	singleton method	line:2
+up	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/db/migrate/20120410085640_remove_is_tutor_from_users.rb	/^  def up$/;"	method	line:2
+up	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/db/migrate/20120411091142_change_user_type_to_type_in_user.rb	/^  def self.up$/;"	singleton method	line:2
+up	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/db/migrate/20120412071145_add_title_to_question.rb	/^  def self.up$/;"	singleton method	line:2
+up	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/db/migrate/20120418043431_create_answer.rb	/^  def self.up$/;"	singleton method	line:2
+up	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/db/migrate/20120509172017_add_status_to_user.rb	/^  def self.up$/;"	singleton method	line:2
+up	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/db/migrate/20120512044715_add_validation_uuid_to_user.rb	/^  def self.up$/;"	singleton method	line:2
+up	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/db/migrate/20120527063909_create_tutor_subject.rb	/^  def up$/;"	method	line:2
+update	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/answers_controller.rb	/^  def update$/;"	method	line:36
+update	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/controllers/questions_controller.rb	/^  def update$/;"	method	line:44
+updateFrame	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/editor/jquery.cleditor.js	/^  function updateFrame(editor, checkForChange) {$/;"	function	line:1066
+updateTextArea	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/editor/jquery.cleditor.js	/^  function updateTextArea(editor, checkForChange) {$/;"	function	line:1101
+updateTooltip	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.cursor.js	/^    function updateTooltip(gridpos, datapos, plot) {$/;"	function	line:467
+walk	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/assets/javascripts/plugins/jqplot.json2.js	/^            function walk(holder, key) {$/;"	function	line:406
+welcome_email	/Users/Jaydeep/Desktop/EducationBeta/EducationBeta/app/mailers/user_mailer.rb	/^  def welcome_email(user)$/;"	method	line:4
