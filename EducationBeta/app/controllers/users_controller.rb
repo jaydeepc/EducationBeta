@@ -31,7 +31,8 @@ class UsersController < ApplicationController
     if current_user.is_tutor?
       @graph = Report.new.report_filter_questions_by_subject_for_an_user current_user
       @graph_2 = Report.new.report_filter_answered_questions_by_subject_for_an_user current_user
-      @graph_3 = Report.new.report_line_graph current_user      
+      @graph_3 = Report.new.report_line_graph current_user    
+      @graph_4 = Report.new.dummy_report current_user  
       render "users/tutors/show" 
     else
       render "users/students/show"

@@ -31,7 +31,7 @@
         <%= render :partial => "users/tutors/body/big_block", :locals => {:header => "Trend of Number of questions you have answered", :report_image => "#{@graph_3}"}%>
         <%= render :partial => "users/tutors/body/small_block", :locals => {:header => "Questions Asked To You", :report_image => "#{@graph}" }%>
         <%= render :partial => "users/tutors/body/small_block", :locals => {:header => "Questions You have Answered", :report_image => "#{@graph_2}"}%>
-        <%= render :partial => "users/tutors/body/small_block", :locals => {:header => "My Reputation", :report_image => "Report will come here"}%>
+        <%= render :partial => "users/tutors/body/small_block", :locals => {:header => "My Reputation", :report_image => "#{@graph_4}"}%>
       </div><!-- Body Wrapper End -->
       <div>
         <%= link_to 'upload',new_user_upload_path(:user_id => current_user.id)%>

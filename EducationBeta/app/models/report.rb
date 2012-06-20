@@ -83,4 +83,18 @@ class Report
     return graph
   end  
 
+  def dummy_report(current_user)
+    graph = nil
+    GoogleChart::PieChart.new('290x200', "Your Hold on Subjects",false) do |pc| 
+      pc.data "Maths", 40 , "9ACD32"
+      pc.data "Physics", 20 , "FBB917"
+      pc.data "Chemistry", 30 , "357EC7"
+      pc.data "Biology", 60 , "E55B3C"
+      pc.show_labels = true
+      graph = pc.to_url 
+    end
+
+    return graph
+  end
+
 end
