@@ -8,6 +8,10 @@ class UploadsController < ApplicationController
     @upload = Upload.new
   end
 
+  def create
+
+  end
+
 
   private
   def is_allowed
