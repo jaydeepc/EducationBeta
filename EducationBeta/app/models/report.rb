@@ -53,5 +53,35 @@ class Report
     end
     return graph
   end
+  
+  def report_line_graph(current_user)
+      
+    questions_answered_date=current_user.questions.group(:updated_at).where(:status => 'answered').size
+    answered_by_months=[]
+    questions_answered_date.keys.each{|k| answered_by_months.push(k.strftime("%b %Y"))}
+    hash_of_answered_by_months = answered_by_months.uniq.inject([]){|r, i| r << { :month => i, :number_of_questions => answered_by_months.select{ |b| b == i }.size }}
+    array_of_month_question=[]
+    for i in 0..hash_of_answered_by_months.length-1
+      hash_of_answered_by_months[i].keys.each{|k| array_of_month_question.push(hash_of_answered_by_months[i][k])} 
+    end
+    months_array=[]
+    number_of_questions_array=[]
+    
+    months_array = array_of_month_question.values_at(* array_of_month_question.each_index.select {|i| i.even?})
+    number_of_questions_array = array_of_month_question.values_at(* array_of_month_question.each_index.select {|i| i.odd?})
+
+    graph = nil   
+    color_1 = '4169E1'
+    lc = GoogleChart::LineChart.new("900x300", "Number of questions answered by Months", false)
+    lc.data "Line green", number_of_questions_array, color_1
+    lc.axis :y, :range => [0,number_of_questions_array.max], :font_size => 10, :alignment => :center
+    lc.axis :x, :labels => months_array, :font_size => 10
+    lc.show_legend = false
+    lc.shape_marker :circle, :color => '000000', :data_set_index => 0, :data_point_index => -1, :pixel_size => 10
+    graph=lc.to_url
+
+
+    return graph
+  end  
 
 end

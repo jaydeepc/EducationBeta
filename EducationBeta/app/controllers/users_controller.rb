@@ -3,6 +3,7 @@ class UsersController < ApplicationController
   before_filter :require_no_user, :only => [:new, :create]
   before_filter :require_user, :only => [:show]
   
+  
   def new
     @user = User.new
   end
@@ -30,6 +31,7 @@ class UsersController < ApplicationController
     if current_user.is_tutor?
       @graph = Report.new.report_filter_questions_by_subject_for_an_user current_user
       @graph_2 = Report.new.report_filter_answered_questions_by_subject_for_an_user current_user
+      @graph_3 = Report.new.report_line_graph current_user      
       render "users/tutors/show" 
     else
       render "users/students/show"
