@@ -59,17 +59,16 @@ class Report
     questions_answered_date=current_user.questions.group(:updated_at).where(:status => 'answered').size
     answered_by_months=[]
     questions_answered_date.keys.each{|k| answered_by_months.push(k.strftime("%b %Y"))}
-    hash_of_answered_by_months = answered_by_months.uniq.inject([]){|r, i| r << { :month => i, :number_of_questions => answered_by_months.select{ |b| b == i }.size }}
-    array_of_month_question=[]
-    for i in 0..hash_of_answered_by_months.length-1
-      hash_of_answered_by_months[i].keys.each{|k| array_of_month_question.push(hash_of_answered_by_months[i][k])} 
-    end
+    
     months_array=[]
     number_of_questions_array=[]
     
-    months_array = array_of_month_question.values_at(* array_of_month_question.each_index.select {|i| i.even?})
-    number_of_questions_array = array_of_month_question.values_at(* array_of_month_question.each_index.select {|i| i.odd?})
-
+    answered_by_months.each do |i|
+      next if months_array.include?(i) 
+      months_array<<i
+      number_of_questions_array<<answered_by_months.select{|b| b==i}.size
+    end
+    
     graph = nil   
     color_1 = '4169E1'
     lc = GoogleChart::LineChart.new("900x300", "Number of questions answered by Months", false)
