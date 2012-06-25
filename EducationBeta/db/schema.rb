@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120620161043) do
+ActiveRecord::Schema.define(:version => 20120625161528) do
 
   create_table "answers", :force => true do |t|
     t.integer  "question_id"
@@ -44,12 +44,13 @@ ActiveRecord::Schema.define(:version => 20120620161043) do
   end
 
   create_table "uploads", :force => true do |t|
-    t.integer  "tutor_id"
-    t.string   "upload_content_type"
-    t.integer  "upload_file_size"
-    t.datetime "created_at",          :null => false
-    t.datetime "updated_at",          :null => false
-    t.string   "upload_file_name"
+    t.integer  "user_id"
+    t.string   "document_file_name"
+    t.string   "document_content_type"
+    t.integer  "document_file_size"
+    t.datetime "document_updated_at"
+    t.datetime "created_at",            :null => false
+    t.datetime "updated_at",            :null => false
   end
 
   create_table "users", :force => true do |t|

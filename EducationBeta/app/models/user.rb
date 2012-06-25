@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  attr_accessible :name, :email, :type, :status, :validation_uuid
+  attr_accessible :name, :email, :password, :type, :status, :validation_uuid
 
   before_save :encrypt_password
 
@@ -10,6 +10,8 @@ class User < ActiveRecord::Base
   validates_presence_of :status
   validates_presence_of :validation_uuid
   validates :type, :presence => true, :inclusion => {:in => %w(Tutor Student)}
+
+  has_many :uploads
 
   def self.authenticate(email, password)
     user = find_by_email(email)

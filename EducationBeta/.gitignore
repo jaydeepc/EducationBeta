@@ -19,3 +19,4 @@ tmp
 
 # Ignore ctags
 tags
+public/system/*

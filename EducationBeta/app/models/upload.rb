@@ -1,3 +1,6 @@
 class Upload < ActiveRecord::Base
-  belongs_to :tutor
+  attr_accessor :document
+  has_attached_file :document
+
+  belongs_to :user
 end
