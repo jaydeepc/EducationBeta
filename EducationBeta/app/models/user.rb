@@ -1,7 +1,6 @@
 class User < ActiveRecord::Base
-  attr_accessible :name, :email, :password, :password_confirmation, :type, :status, :validation_uuid
+  attr_accessible :name, :email, :type, :status, :validation_uuid
 
-  attr_accessor :password
   before_save :encrypt_password
 
   validates_confirmation_of :password
