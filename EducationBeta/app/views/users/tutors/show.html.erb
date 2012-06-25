@@ -34,7 +34,7 @@
         <%= render :partial => "users/tutors/body/small_block", :locals => {:header => "My Reputation", :report_image => "#{@graph_4}"}%>
       </div><!-- Body Wrapper End -->
       <div>
-        <%= link_to 'upload',new_user_upload_path(:user_id => current_user.id)%>
+        <%= link_to 'upload',new_upload_path%>
       </div>
   </body>
 </html>

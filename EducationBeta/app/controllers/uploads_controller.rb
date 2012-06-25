@@ -8,6 +8,16 @@ class UploadsController < ApplicationController
     @upload = Upload.new
   end
 
+  def create
+     @upload = Upload.new(params[:upload])
+     if @upload.save!
+       @upload.update_attributes({:user_id => current_user.id})
+       redirect_to uploads_path
+     else
+       redirect_to("/500.html")
+     end
+  end
+
 
   private
   def is_allowed

@@ -30,6 +30,7 @@ gem 'execjs'
 gem 'therubyracer'
 gem 'uuidtools'
 gem 'gchartrb'
+gem 'paperclip', :git => 'git://github.com/thoughtbot/paperclip.git'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'

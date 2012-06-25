@@ -10,12 +10,12 @@ EducationBeta::Application.routes.draw do
   match '/resend/email/popup' => 'users#show_popup'
   
   resources :users do 
-    resources :uploads
     resources :questions do
       resources :answers
     end
   end 
   resources :sessions
+  resources :uploads
 
 
   # The priority is based upon order of creation:
