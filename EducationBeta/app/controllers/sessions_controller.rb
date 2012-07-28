@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
   def create
     user = User.authenticate(params[:email], params[:password])
     if user
-      @user = user
+      @current_user = user
       session[:user_id] = user.id
       redirect_to user_path({:id => user.id})
     else

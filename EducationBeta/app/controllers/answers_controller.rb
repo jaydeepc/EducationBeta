@@ -25,6 +25,7 @@ class AnswersController < ApplicationController
 
   def show
     @question = Question.find(params[:question_id])
+    redirect_to("/401.html") unless @question.belongs_to?(current_user)
     @answer = Answer.find(params[:id])
     if current_user.is_tutor?
       render "answers/tutors/show"

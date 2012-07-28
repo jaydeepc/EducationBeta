@@ -1,0 +1,5 @@
+<div> Your uploads: </br>
+<%for upload in @uploads%>
+  <ul> <%= link_to(upload.document_file_name, user_upload_path(current_user.id, upload.id))%> </ul>
+<%end%>
+</div>

@@ -5,4 +5,5 @@ class Answer < ActiveRecord::Base
 
   validates :question_id, :presence => true, :numericality => true
   validates_presence_of :description
+
  end

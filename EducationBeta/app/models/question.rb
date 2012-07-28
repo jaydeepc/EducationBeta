@@ -12,4 +12,9 @@ class Question < ActiveRecord::Base
   validates :subject_id, :presence => true, :numericality => true
   validates_presence_of :description
   validates_presence_of :title
+
+  def belongs_to? user
+    return false unless [self.student_id, self.tutor_id].include?(user.id)
+    return true
+  end
  end
