@@ -1,14 +1,6 @@
 <ul id="navigation" align="center"><!-- Main Navigation Begin -->
   <li><a href="#" class="icon_stats">Dashboard</a></li>
-  <li><a href="#" class="icon_users">Create Notes</a>
-  <ul>
-    <li><a href="#">English</a></li>
-    <li><a href="#">Bengali</a></li>
-    <li><a href="#">Social Studies</a></li>
-    <li><a href="#">Science</a></li>
-    <li><a href="#">Mathematics</a></li>
-    <li><a href="#">Advanced Mathematics</a></li>
-  </ul>
+  <li><%= link_to 'Upload',new_user_upload_path(current_user.id), :class => "icon_users"%>
   </li>
   <li><%=link_to "My Questions", user_questions_path({:user_id => current_user.id}), :class => "icon_email" %></li>
   <li><a href="#" class="icon_folder">Edu-Catchup</a>

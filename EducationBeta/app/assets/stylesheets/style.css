@@ -50,6 +50,23 @@ ul li {
 
 .form {}
 
+.form .file {
+	height: 20px;
+	padding: 5px;
+	border: 1px solid #8e9bac;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: #ffffff;
+	background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 3%, #ffffff 25%, #ffffff 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(3%,#e5e5e5), color-stop(25%,#ffffff), color-stop(100%,#ffffff));
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 3%,#ffffff 25%,#ffffff 100%);
+	background: -o-linear-gradient(top,  #ffffff 0%,#e5e5e5 3%,#ffffff 25%,#ffffff 100%);
+	background: -ms-linear-gradient(top, #ededed 0%,#ffffff 100%);
+	background: linear-gradient(top,  #ffffff 0%,#e5e5e5 3%,#ffffff 25%,#ffffff 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff',GradientType=0 ); 
+}
+
 .form .input {
 	height: 20px;
 	padding: 5px;
@@ -641,6 +658,19 @@ div.information .hide_btn:hover {
 
 
 /************************ BODY ************************/
+
+#upload_image{
+    background: url('upload.png') no-repeat;
+    background-size:380px 400px;
+	margin: 10px 0;    
+	background-position:center;
+}
+
+#uploader_image{
+    background: url('up2.jpg') no-repeat;
+    background-size:310px 125px;
+	background-position:center;
+}
 
 
 #body {
