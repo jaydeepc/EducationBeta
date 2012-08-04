@@ -13,12 +13,40 @@
   <%= javascript_include_tag "css_browser_selector" %>
 
 </head>
-
-
-
-
-<div> Your upload: </br>
+<!-- <div> Your upload: </br>
   <ul> Name:  <%= @upload.document_file_name %> </ul>
   <ul> Type:  <%= @upload.document_content_type %> </ul>
   <ul> Size:  <%= @upload.document_file_size %> </ul>
+</div> -->
+
+<div id="main" class="container_12"><!-- Body Wrapper Begin -->
+  <div id="header"><!-- Header Begin -->
+    <div class="grid_3"><a href="#" id="logo" class="float_left">EducationBeta</a></div>
+    <div class="grid_4 push_5">
+      <%= render "shared/header_search"%>
+    </div>
+  </div><!-- Header End -->
+  <div class="clear"></div>
+
+<div id="userbar"><!-- Userbar Begin -->
+<% if current_user.is_tutor? %>	
+	<%= render "users/tutors/userbar/profile"%>
+	<%= render "users/tutors/userbar/navigation"%>
+<% else %>
+	<%= render "users/students/userbar/profile"%>
+	<%= render "users/students/userbar/navigation"%>
+<% end %>	
 </div>
+
+<div id="body">
+	<div class="block big"><!-- Block Begin -->
+		<div class="titlebar">
+			<h3><%= @upload.document_file_name %></h3>
+			<a href="#" class="toggle">&nbsp;</a>
+		</div>
+		<div class="block_cont" style="overflow:hidden;margin:0px;padding:0px;">
+			<iframe src="<%= @upload.document.url %>" width="100%" height="800px" frameborder="0"></iframe>
+		</div>
+	</div><!-- Block End -->
+</div>
+</div><!-- Body Wrapper End -->
