@@ -1,3 +1,22 @@
+<head>
+  <title>Students</title>
+  <%= stylesheet_link_tag "grid" %>
+  <%= stylesheet_link_tag "reset" %>
+  <%= stylesheet_link_tag "sessions" %>
+  <%= stylesheet_link_tag "plugins" %>
+	<%= stylesheet_link_tag "style" %>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <%= javascript_include_tag "jquery-1.7.1.min" %>
+  <%= javascript_include_tag "jquery.corner" %>
+  <%= javascript_include_tag "jquery.validate" %>
+  <%= javascript_include_tag "js" %>
+  <%= javascript_include_tag "css_browser_selector" %>
+
+</head>
+
+
+
+
 <div> Your upload: </br>
   <ul> Name:  <%= @upload.document_file_name %> </ul>
   <ul> Type:  <%= @upload.document_content_type %> </ul>
