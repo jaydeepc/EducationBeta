@@ -1,6 +1,9 @@
 <ul id="navigation" align="center"><!-- Main Navigation Begin -->
   <li><a href="#" class="icon_stats">Dashboard</a></li>
   <li><%= link_to 'Upload',new_user_upload_path(current_user.id), :class => "icon_users"%>
+	  <ul>
+	    <li><%=link_to "My Uploads", user_uploads_path({:user_id => current_user.id}) %></li>
+	  </ul>
   </li>
   <li><%=link_to "My Questions", user_questions_path({:user_id => current_user.id}), :class => "icon_email" %></li>
   <li><a href="#" class="icon_folder">Edu-Catchup</a>
