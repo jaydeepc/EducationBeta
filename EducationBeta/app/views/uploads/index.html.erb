@@ -57,6 +57,7 @@
 					<tr>
 					<th width="40"><input type="checkbox" name="check" value="-"></th>
 					<th>Content</th>
+					<th>Chapter</th>
 					<th>Standard</th>
 					<th>Subject</th>
 					</tr>
@@ -65,8 +66,9 @@
 				<tr>
 				  <td><input type="checkbox" name="check" value="-"></td>	
 			      <td><%= link_to(upload.document_file_name, user_upload_path(current_user.id, upload.id))%> </td>
-			      <td></td>
-			      <td></td>
+            <td><%= upload.chapter.name%></td>
+            <td><%= upload.standard.name%></td>
+            <td><%= upload.subject.subject%></td>
 			    </tr>
 			    <%end%>
 			</table><!-- Table Wrapper End -->

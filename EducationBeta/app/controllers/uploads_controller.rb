@@ -9,10 +9,14 @@ class UploadsController < ApplicationController
   end
 
   def create
+    params[:upload][:user_id] = current_user.id
+    params[:upload][:subject_id] = Subject.find_by_subject(params[:subject]).id
+    params[:upload][:standard_id] = Standard.find_by_name(params[:standard]).id
+    params[:upload][:chapter_id] = Chapter.find_by_name(params[:chapter]).id
+    Rails.logger.info params[:upload].inspect
     @upload = Upload.new(params[:upload])
     begin
       if @upload.save
-        @upload.update_attributes({:user_id => current_user.id})
         redirect_to user_uploads_path(current_user.id)
       else
         render 'new'

@@ -57,31 +57,18 @@
 					    </div>
 					  <% end %>
 					  <div class="form_row">
-							  <select class="select" id="standard" name="standard" style="width: 250px;">
-								<option value="select_std">Select Standard</option>
-								<option value="ninth">IX</option>
-								<option value="tenth">X</option></select><br />
-					  </div>					
+              <h3>Subject</h3>
+              <%= select_tag :subject, options_for_select(Subject.find(:all).collect(&:subject)), :class => "select" %>
+            </div> 
 					  <div class="form_row">
-							  <select class="select" id="subjects" name="subjects" style="width: 250px;">
-								<option value="select_subject">Select Subject</option>
-								<option value="English">English</option>
-								<option value="Bengali">Bengali</option>
-								<option value="Social_Studies">Social Studies</option>
-								<option value="Science">Science</option>
-								<option value="Mathematics">Mathematics</option>
-								<option value="Advanced_Mathematics">Advanced Mathematics</option></select><br />
-					  </div>
+              <h3>Standard</h3>
+              <%= select_tag :standard, options_for_select(Standard.find(:all).collect(&:name),'Standard'), :class => "select" %>
+            </div> 
 					  <div class="form_row">
-							  <select class="select" id="chapters" name="chapter" style="width: 250px;">
-								<option value="Chapter-1">Chapter-1</option>
-								<option value="Chapter-2">Chapter-2</option>
-								<option value="Chapter-3">Chapter-3</option>
-								<option value="Chapter-4">Chapter-4</option>
-								<option value="Chapter-5">Chapter-5</option>
-								<option value="Chapter-6">Chapter-6</option>
-								<option value="Chapter-7">Chapter-7</option></select><br />
-					  </div>	
+              <h3>Chapter</h3>
+              <%= select_tag :chapter, options_for_select(Chapter.find(:all).collect(&:name),'Chapter'), :class => "select" %>
+            </div> 
+              <h3>Upload a file</h3>
 					  <div class="form_row"><%= f.label :document %><%= f.file_field :document, :class=>"file tipRight" %></div>
 					  <div class="form_row"><%= f.submit :class=>"submit"%></div>
 	                  </div>

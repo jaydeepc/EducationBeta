@@ -1,8 +1,11 @@
 class Upload < ActiveRecord::Base
-  attr_accessor :document
+  attr_accessor :document 
   has_attached_file :document
 
   belongs_to :user
+  belongs_to :subject
+  belongs_to :standard
+  belongs_to :chapter
 
   validate :check_content_presence
   validate :check_content_size
