@@ -44,7 +44,7 @@
 	        <div id="chart2" style="height:392px; width:100%;">
 	            <div id="loginbox">
 	              <a href="#" id="logo">EducationBeta</a>
-	              <div id="loginform">
+	              <div id="loginform" style="margin-top: -65px;">
 					<%= form_for([current_user, @upload], :method => "POST", :html => {:multipart => "true",:class => "form"}) do |f| %>
 					  <% if @upload.errors.any? %>
 					    <div class="error_messages">
