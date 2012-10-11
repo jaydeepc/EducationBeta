@@ -1,5 +1,6 @@
 class UploadsController < ApplicationController
 
+  require 'fileutils'
   before_filter :require_user
   before_filter :is_allowed, :only => [:create, :update]
   helper_method :is_allowed
@@ -34,6 +35,18 @@ class UploadsController < ApplicationController
   def show
     @upload=Upload.find(params[:id])
     redirect_to "/401.html" unless @upload.belongs_to?(current_user)
+  end
+  
+  def destroy
+    begin
+      upload = Upload.find(params[:id])
+      FileUitls.rm_rf upload.document.path
+      upload.destroy
+      render 'index'
+    rescue Exception => e
+      Rails.logger.info "#{e.message} \n #{e.backtrace}"
+      redirect_to("/500.html")
+    end
   end
 
 
