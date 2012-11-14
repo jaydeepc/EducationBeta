@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120806173308) do
+ActiveRecord::Schema.define(:version => 20121114061140) do
 
   create_table "answers", :force => true do |t|
     t.integer  "question_id"
@@ -70,8 +70,6 @@ ActiveRecord::Schema.define(:version => 20120806173308) do
 
   create_table "users", :force => true do |t|
     t.string   "email"
-    t.string   "password_hash"
-    t.string   "password_salt"
     t.string   "first_name"
     t.string   "last_name"
     t.datetime "created_at",      :null => false
@@ -80,6 +78,7 @@ ActiveRecord::Schema.define(:version => 20120806173308) do
     t.string   "type"
     t.string   "status"
     t.string   "validation_uuid"
+    t.string   "password_digest"
   end
 
 end
