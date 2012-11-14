@@ -1,5 +1,9 @@
 EducationBeta::Application.routes.draw do
 
+  get "validate_registration/new"
+
+  get "password_resets/new"
+
   get "log_out" => "sessions#destroy", :as => "log_out"
   get "log_in" => "sessions#new", :as => "log_in"
   get "sign_up" => "users#new", :as => "sign_up"
@@ -7,7 +11,6 @@ EducationBeta::Application.routes.draw do
   root :to => "welcome#show"
   match 'validate/:uuid' => 'users#confirm_registration'
   match 'resend/validation_email' => 'users#resend_validation'
-  match '/resend/email/popup' => 'users#show_popup'
   
   resources :users do 
   resources :uploads
@@ -16,6 +19,8 @@ EducationBeta::Application.routes.draw do
     end
   end 
   resources :sessions
+  resources :password_resets
+  resources :validate_registrations
 
 
   # The priority is based upon order of creation:

@@ -1,0 +1,36 @@
+
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>	
+	<table align="center" style="height:80px;width: 100%;">
+		<tr style="width:80px;">
+			<td><img src="http://localhost:3000/images/logo1.png" style="height: 110px;" /></td>
+		</tr>
+		<tr style="width:150px;">
+			<td><img src="http://localhost:3000/images/landing_logo.jpg" style="height: 200px;width: 640px" /></td>
+		</tr>
+		<tr style="width:80px;">
+			<td><h1>Welcome to EducationBeta, <%= @user.name %></h1></td>
+		</tr>
+		<tr style="">
+			<td>You have successfully signed up to EducationBeta.com</td>
+		</tr>
+		<tr style="">
+			<td>
+				<ul>
+				<li>Your username is: <%= @user.email %>
+				<li>Your password is: test123
+				</ul>
+			</td>
+		</tr>
+		<tr style="">
+			<td></td>
+		</tr>
+		<tr style="">
+			<td>To confirm your registration, just follow this link: <%= edit_validate_registration_path(@user.validation_token) %></td>
+		</tr>
+	</table>	
+  </body>
+</html>

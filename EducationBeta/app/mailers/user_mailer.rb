@@ -1,9 +1,13 @@
 class UserMailer < ActionMailer::Base
   default :from => "sumanth@educationbeta.com"
-  
-  def welcome_email(user)
+
+  def validation_token(user)
     @user = user
-    @url = "http://#{APP_CONFIG['domain']}:#{APP_CONFIG['port']}/validate/#{user.validation_uuid}"
-    mail(:to => user.email, :subject => "Welcome to education beta") 
+    mail(:to => user.email, :subject => "Confirm your registration") 
+  end
+
+  def password_reset(user)
+    @user = user
+    mail :to => user.email, :subject => "Password Reset"
   end
 end

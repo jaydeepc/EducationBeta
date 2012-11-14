@@ -1,0 +1,2 @@
+module ValidateRegistrationHelper
+end

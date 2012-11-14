@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121114061140) do
+ActiveRecord::Schema.define(:version => 20121114105247) do
 
   create_table "answers", :force => true do |t|
     t.integer  "question_id"
@@ -72,13 +72,16 @@ ActiveRecord::Schema.define(:version => 20121114061140) do
     t.string   "email"
     t.string   "first_name"
     t.string   "last_name"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
+    t.datetime "created_at",               :null => false
+    t.datetime "updated_at",               :null => false
     t.string   "name"
     t.string   "type"
     t.string   "status"
-    t.string   "validation_uuid"
+    t.string   "validation_token"
     t.string   "password_digest"
+    t.string   "password_reset_token"
+    t.datetime "password_reset_sent_at"
+    t.datetime "validation_token_sent_at"
   end
 
 end
