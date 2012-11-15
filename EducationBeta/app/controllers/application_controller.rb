@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+  layout Proc.new { |controller| controller.request.xhr? ? nil : 'application' }
   protect_from_forgery
   helper_method :current_user
 

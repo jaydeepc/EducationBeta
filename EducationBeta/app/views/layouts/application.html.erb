@@ -7,23 +7,23 @@
     <%= javascript_include_tag 'jquery.min', 'jquery-ui.min', 'rails' %>
     <%= csrf_meta_tags %>
 
-	<style>
-	#navigation li {
-		width: 124px;
-	}
-	#navigation li ul li {
-		width: 122px;
-	}
-	#username {
-		width: 237px;
-	}
-	</style>
-	
+    <style>
+      #navigation li {
+        width: 124px;
+      }
+      #navigation li ul li {
+        width: 122px;
+      }
+      #username {
+        width: 237px;
+      }
+    </style>
+
   </head>
   <body>
     <h2> <div class="grid_3"><%= link_to "", root_url, :id => "title_text" %>
-	<div id="header_1"></div>
-	</div>
+        <div id="header_1"></div>
+      </div>
       <% flash.each do |name, msg| %>
         <%= content_tag :div, msg, :id => "flash_#{name}" %>
       <% end %>

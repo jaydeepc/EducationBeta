@@ -1,38 +1,52 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree ./
+ */
+
 body {
-	background: #363d47 url('images/background.jpg') top center no-repeat fixed;
-	font-family: Tahoma, Verdana, Arial, sans-serif;
-	font-size: 12px;
-	color: #ffffff;
+  background: #363d47 url('images/background.jpg') top center no-repeat fixed;
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-size: 12px;
+  color: #ffffff;
 }
- 
+
 #title_text {
-	width: 220px;
-	height: 140px;
-    display: block;
-    margin: 0 auto;
-	background: url('images/logo5.png') 0 0 no-repeat;
-	background-size: 280px;
-    text-indent: -9999px;
-    margin-left: 115px;
-    margin-bottom: -80px;
+  width: 220px;
+  height: 140px;
+  display: block;
+  margin: 0 auto;
+  background: url('images/logo5.png') 0 0 no-repeat;
+  background-size: 280px;
+  text-indent: -9999px;
+  margin-left: 115px;
+  margin-bottom: -80px;
 } 
 
 #user_nav {
-    color: #ffffff;
-	font-family: Tahoma;
-	font-size: 12px;
-	font-weight: bold;
-	line-height: 12px;
-	width: 380px;
+  color: #ffffff;
+  font-family: Tahoma;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 12px;
+  width: 380px;
 }
 
 #header_1 {
-	width: 480px;
-	height: 33px;
-	float:left;    
-    background: url('images/header_1.png') 0 0 no-repeat;
-	background-size: 480px;
-	text-indent: -9999px;
-	margin-top: -20px;
-	margin-left: 323px;
+  width: 480px;
+  height: 33px;
+  float:left;    
+  background: url('images/header_1.png') 0 0 no-repeat;
+  background-size: 480px;
+  text-indent: -9999px;
+  margin-top: -20px;
+  margin-left: 323px;
 }

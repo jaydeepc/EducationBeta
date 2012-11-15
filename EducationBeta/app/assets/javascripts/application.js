@@ -1,6 +1,15 @@
-body {
-	background: #363d47 url('images/background.jpg') top center no-repeat fixed;
-	font-family: Tahoma, Verdana, Arial, sans-serif;
-	font-size: 12px;
-	color: #ffffff;
-}
+//= require jquery
+//= require jquery_ujs
+
+$(function(){
+    var $modal = $('#modal'),
+    $modal_close = $modal.find('.close'),
+    $modal_container = $('#modal-container');
+
+    // Hide close button click
+    $('.close', '#modal').live('click', function(){
+      $modal_container.hide();
+      $modal.css('width', '600px').hide();
+      return false;
+     });
+});

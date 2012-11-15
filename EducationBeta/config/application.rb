@@ -61,6 +61,7 @@ module EducationBeta
         :host => 'localhost:3000',
         :only_path => false
     }
+    config.action_view.javascript_expansions[:defaults] = %w( jquery rails )
 
   end
 end
