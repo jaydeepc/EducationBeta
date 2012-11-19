@@ -1,86 +1,66 @@
-<html lang="en">
-  <head>
-    <title>Students</title>
-    <%= stylesheet_link_tag "grid" %>
-    <%= stylesheet_link_tag "reset" %>
-    <%= stylesheet_link_tag "sessions" %>
-    <%= stylesheet_link_tag "plugins" %>
-	<%= stylesheet_link_tag "style" %>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <%= javascript_include_tag "jquery-1.7.1.min" %>
-    <%= javascript_include_tag "jquery.corner" %>
-    <%= javascript_include_tag "jquery.validate" %>
-    <%= javascript_include_tag "js" %>
-    <%= javascript_include_tag "css_browser_selector" %>
+<div id="main" class="container_12"><!-- Body Wrapper Begin -->
+  <div id="header"><!-- Header Begin -->
+    <div class="grid_3"><a href="#" id="logo" class="float_left">EducationBeta</a></div>
+    <div class="grid_4 push_5">
+      <%= render "shared/header_search"%>
+    </div>
+  </div><!-- Header End -->
+  <div class="clear"></div>
+  <div id="userbar"><!-- Userbar Begin -->
+    <%= render "users/tutors/userbar/profile"%>
+    <%= render "users/tutors/userbar/navigation"%>	
+  </div><!-- Userbar End -->
+  <div class="clear"></div>
 
-  </head>
-  <body>
-	
-    <div id="main" class="container_12"><!-- Body Wrapper Begin -->
-      <div id="header"><!-- Header Begin -->
-        <div class="grid_3"><a href="#" id="logo" class="float_left">EducationBeta</a></div>
-        <div class="grid_4 push_5">
-          <%= render "shared/header_search"%>
+  <div id="body">
+    <div class="block" border="0"><!-- Block Begin -->
+      <div id="upload_image" style="height:480px;"></div>
+    </div>
+
+
+    <div class="block small"><!-- Block Begin -->
+      <div class="titlebar">
+
+        <div id="uploader_image" style="height:85px;"></div>
+        <div class="block_cont" style="background: url('title_txt.png') 0 0 no-repeat;">
+          <div id="chart2" style="height:392px; width:100%;">
+            <div id="loginbox">
+              <a href="#" id="logo">EducationBeta</a>
+              <div id="loginform" style="margin-top: -65px;">
+                <%= form_for([current_user, @upload], :method => "POST", :html => {:multipart => "true",:class => "form"}) do |f| %>
+                  <% if @upload.errors.any? %>
+                    <div class="error_messages">
+                      <h2>Form is invalid</h2>
+                      <ul>
+                        <% for message in @upload.errors.full_messages %>
+                          <li><%= message %></li>
+                        <% end %>
+                      </ul>
+                    </div>
+                  <% end %>
+                  <div class="form_row">
+                    <h3>Subject</h3>
+                    <%= select_tag :subject, options_for_select(Subject.find(:all).collect(&:subject)), :class => "select" %>
+                  </div> 
+                  <div class="form_row">
+                    <h3>Standard</h3>
+                    <%= select_tag :standard, options_for_select(Standard.find(:all).collect(&:name),'Standard'), :class => "select" %>
+                  </div> 
+                  <div class="form_row">
+                    <h3>Chapter</h3>
+                    <%= select_tag :chapter, options_for_select(Chapter.find(:all).collect(&:name),'Chapter'), :class => "select" %>
+                  </div> 
+                  <h3>Upload a file</h3>
+                  <div class="form_row"><%= f.label :document %><%= f.file_field :document, :class=>"file tipRight" %></div>
+                  <div class="form_row"><%= f.submit :class=>"submit"%></div>
+                </div>
+              <% end %>	
+            </div>
+
+          </div>
         </div>
-      </div><!-- Header End -->
-      <div class="clear"></div>
-      <div id="userbar"><!-- Userbar Begin -->
-		<%= render "users/tutors/userbar/profile"%>
-		<%= render "users/tutors/userbar/navigation"%>	
-      </div><!-- Userbar End -->
-      <div class="clear"></div>
+      </div>	
+    </div>
+  </div>
 
-	<div id="body">
-		<div class="block" border="0"><!-- Block Begin -->
-		    <div id="upload_image" style="height:480px;"></div>
-		</div>
-
-
-	  <div class="block small"><!-- Block Begin -->
-	    <div class="titlebar">
-	      
-		  <div id="uploader_image" style="height:85px;"></div>
-	      <div class="block_cont" style="background: url('title_txt.png') 0 0 no-repeat;">
-	        <div id="chart2" style="height:392px; width:100%;">
-	            <div id="loginbox">
-	              <a href="#" id="logo">EducationBeta</a>
-	              <div id="loginform" style="margin-top: -65px;">
-					<%= form_for([current_user, @upload], :method => "POST", :html => {:multipart => "true",:class => "form"}) do |f| %>
-					  <% if @upload.errors.any? %>
-					    <div class="error_messages">
-					      <h2>Form is invalid</h2>
-					      <ul>
-					        <% for message in @upload.errors.full_messages %>
-					          <li><%= message %></li>
-					        <% end %>
-					      </ul>
-					    </div>
-					  <% end %>
-					  <div class="form_row">
-              <h3>Subject</h3>
-              <%= select_tag :subject, options_for_select(Subject.find(:all).collect(&:subject)), :class => "select" %>
-            </div> 
-					  <div class="form_row">
-              <h3>Standard</h3>
-              <%= select_tag :standard, options_for_select(Standard.find(:all).collect(&:name),'Standard'), :class => "select" %>
-            </div> 
-					  <div class="form_row">
-              <h3>Chapter</h3>
-              <%= select_tag :chapter, options_for_select(Chapter.find(:all).collect(&:name),'Chapter'), :class => "select" %>
-            </div> 
-              <h3>Upload a file</h3>
-					  <div class="form_row"><%= f.label :document %><%= f.file_field :document, :class=>"file tipRight" %></div>
-					  <div class="form_row"><%= f.submit :class=>"submit"%></div>
-	                  </div>
-	                <% end %>	
-	              </div>
-
-	            </div>
-	          </div>
-	        </div>	
-	      </div>
-	    </div>
-
-      </div><!-- Body Wrapper End -->		
-  </body>
-</html>
+</div><!-- Body Wrapper End -->		

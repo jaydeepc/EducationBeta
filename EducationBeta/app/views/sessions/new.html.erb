@@ -1,34 +1,15 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html lang="en">
-<head>
-<title>EducationBeta</title>
-<%= javascript_include_tag "jquery-1.7.1.min" %>
-<%= javascript_include_tag "jquery.corner" %>
-<%= javascript_include_tag "jquery.validate" %>
-<%= javascript_include_tag "js" %>
-<%= javascript_include_tag "css_browser_selector" %>
-
-<%= stylesheet_link_tag "sessions" %>
-<%= stylesheet_link_tag "grid" %>
-<%= stylesheet_link_tag "reset" %>
-<%= stylesheet_link_tag "style" %>
-</head>
-<body>
-	<%= form_tag sessions_path do %> 
-	<div id="loginbox">
-		<a href="#" id="logo">EducationBeta</a>
-		<div id="loginform">
-			<form name="login" action="cp_main.html" method="get">
-				<div id="username_field"><%= text_field_tag :email, params[:email], :class => 'required' %></div>
-				<div id="password_field"><%= password_field_tag :password, nil, :class => 'required' %></div>
-				<div id="buttonline">
-					<%= submit_tag "Log in", :class => 'float_left width_4', :id => 'loginbutton' %>
-					<a href="#" class="passforgot float_right">Forgot your password?</a>
-				</div>
-			</form>	
-		</div>
-	</div>
-	<% end %>
-</body>
-</html>
-
+<%= form_tag sessions_path do %> 
+  <div id="loginbox">
+    <a href="#" id="logo">EducationBeta</a>
+    <div id="loginform">
+      <form name="login" action="cp_main.html" method="get">
+        <div id="username_field"><%= text_field_tag :email, params[:email], :class => 'required' %></div>
+        <div id="password_field"><%= password_field_tag :password, nil, :class => 'required' %></div>
+        <div id="buttonline">
+          <%= submit_tag "Log in", :class => 'float_left width_4', :id => 'loginbutton' %>
+          <a href="#" class="passforgot float_right">Forgot your password?</a>
+        </div>
+      </form>	
+    </div>
+  </div>
+<% end %>

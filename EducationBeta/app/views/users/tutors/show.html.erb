@@ -1,38 +1,19 @@
-<html lang="en">
-  <head>
-    <title>Students</title>
-    <%= stylesheet_link_tag "grid" %>
-    <%= stylesheet_link_tag "reset" %>
-    <%= stylesheet_link_tag "sessions" %>
-    <%= stylesheet_link_tag "plugins" %>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <%= javascript_include_tag "jquery-1.7.1.min" %>
-    <%= javascript_include_tag "jquery.corner" %>
-    <%= javascript_include_tag "jquery.validate" %>
-    <%= javascript_include_tag "js" %>
-    <%= javascript_include_tag "css_browser_selector" %>
-
-  </head>
-  <body>
-    <div id="main" class="container_12"><!-- Body Wrapper Begin -->
-      <div id="header"><!-- Header Begin -->
-        <div class="grid_3"><a href="#" id="logo" class="float_left">EducationBeta</a></div>
-        <div class="grid_4 push_5">
-          <%= render "shared/header_search"%>
-        </div>
-      </div><!-- Header End -->
-      <div class="clear"></div>
-      <div id="userbar"><!-- Userbar Begin -->
-        <%= render "users/tutors/userbar/profile"%>
-        <%= render "users/tutors/userbar/navigation"%>
-      </div><!-- Userbar End -->
-      <div class="clear"></div>
-      <div id="body">
-        <%= render :partial => "users/tutors/body/big_block", :locals => {:header => "Trend of Number of questions you have answered", :report_image => "#{@graph_3}"}%>
-        <%= render :partial => "users/tutors/body/small_block", :locals => {:header => "Questions Asked To You", :report_image => "#{@graph}" }%>
-        <%= render :partial => "users/tutors/body/small_block", :locals => {:header => "Questions You have Answered", :report_image => "#{@graph_2}"}%>
-        <%= render :partial => "users/tutors/body/small_block", :locals => {:header => "My Reputation", :report_image => "#{@graph_4}"}%>
-      </div><!-- Body Wrapper End -->
-
-  </body>
-</html>
+<div id="main" class="container_12"><!-- Body Wrapper Begin -->
+  <div id="header"><!-- Header Begin -->
+    <div class="grid_3"><a href="#" id="logo" class="float_left">EducationBeta</a></div>
+    <div class="grid_4 push_5">
+      <%= render "shared/header_search"%>
+    </div>
+  </div><!-- Header End -->
+  <div class="clear"></div>
+  <div id="userbar"><!-- Userbar Begin -->
+    <%= render "users/tutors/userbar/profile"%>
+    <%= render "users/tutors/userbar/navigation"%>
+  </div><!-- Userbar End -->
+  <div class="clear"></div>
+  <div id="body">
+    <%= render :partial => "users/tutors/body/big_block", :locals => {:header => "Trend of Number of questions you have answered", :report_image => "#{@graph_3}"}%>
+    <%= render :partial => "users/tutors/body/small_block", :locals => {:header => "Questions Asked To You", :report_image => "#{@graph}" }%>
+    <%= render :partial => "users/tutors/body/small_block", :locals => {:header => "Questions You have Answered", :report_image => "#{@graph_2}"}%>
+    <%= render :partial => "users/tutors/body/small_block", :locals => {:header => "My Reputation", :report_image => "#{@graph_4}"}%>
+  </div><!-- Body Wrapper End -->
