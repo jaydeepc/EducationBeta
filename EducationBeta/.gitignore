@@ -22,3 +22,4 @@ tags
 
 #Ignore images and other uploads
 public/system/*
+.rvmrc
