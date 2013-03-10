@@ -27,7 +27,9 @@ class SessionsController < ApplicationController
   private
   def is_registered
     begin
-      unless User.find_by_email(params[:email]).status == "registered"
+      user = User.find_by_email(params[:email])
+      return unless user
+      unless user.status == "registered"
         redirect_to root_url, :notice => "You are not successfully registered yet. Please follow the validation email to successfully register"
       end
     rescue
