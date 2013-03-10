@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 gem 'rails', '3.2.1'
 
@@ -27,7 +27,8 @@ gem 'bcrypt-ruby', '~> 3.0.0', :require => "bcrypt"
 
 gem 'execjs'
 
-gem 'therubyracer'
+gem 'libv8', '~> 3.11.8'
+gem 'therubyracer', '0.11.4'
 gem 'uuidtools'
 gem 'gchartrb'
 gem 'paperclip', :git => 'git://github.com/thoughtbot/paperclip.git'
